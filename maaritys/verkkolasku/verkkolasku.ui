@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Finvoicevalinnat</class>
+ <widget class="QWidget" name="Finvoicevalinnat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>832</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QLabel" name="kirjauduLabel">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 0);
+font-weight: bold;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Kirjaudu Kitsaan pilveen muokataksesi verkkolaskutuksen asetuksia.</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="yhteystietovirheLabel">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 0);
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Yhteystietosi ovat puutteelliset. Et voi muodostaa verkkolaskuja, ellei osoitetta, sähköpostiosoitetta, y-tunnusta ja kotipaikkaa ole määritelty.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="odotaLabel">
+     <property name="styleSheet">
+      <string notr="true">font: 16pt &quot;Sans Serif&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Odota, tietoja haetaan ...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="velhoGroup">
+     <property name="title">
+      <string>Ota käyttöön</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1,1">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Kitsaan integroidulla verkkolaskutuksella lähetät ja vastaanotat verkkolaskut helposti suoraan kirjanpitoosi.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="velhoNappi">
+        <property name="text">
+         <string>Ota verkkolaskutus käyttöön...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../pic/pic.qrc">
+          <normaloff>:/pic/e64.png</normaloff>:/pic/e64.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="kaytossaGroup">
+     <property name="title">
+      <string>Finvoice-verkkolaskut</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QRadioButton" name="eiKaytossa">
+        <property name="text">
+         <string>Ei käytössä</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="paikallinen">
+        <property name="text">
+         <string>Verkkolaskujen paikallinen muodostaminen tiedostoon</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="integroitu">
+        <property name="text">
+         <string>Maventa-verkkolasku</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="osoiteGroup">
+     <property name="title">
+      <string>Oma verkkolaskuosoite</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Verkkolaskuosoite</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="ovtEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Välittäjän tunnus</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="operaattoriEdit">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="hakemistoGroup">
+     <property name="title">
+      <string>Paikalliset asetukset</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Ohjelma muodostaa verkkolaskuja, mutta käyttäjän on itse ladattava ne verkkolaskuoperaattorille</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Tallennushakemisto</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+          <item>
+           <widget class="QLineEdit" name="hakemistoEdit">
+            <property name="frame">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="hakemistoNappi">
+            <property name="text">
+             <string>Valitse hakemisto</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../pic/pic.qrc">
+              <normaloff>:/pic/folder.png</normaloff>:/pic/folder.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="soapCheck">
+        <property name="text">
+         <string>Lisää SOAP-kehys</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="maventaGroup">
+     <property name="title">
+      <string>Maventa-verkkolasku</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,3,1">
+      <item>
+       <widget class="QLabel" name="maventaOk">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../pic/pic.qrc">:/pic/ok.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="virheLabel">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../pic/pic.qrc">:/pic/varoitus.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="maventaInfo">
+        <property name="text">
+         <string>Noudetaan verkkolaskun käyttäjätietoja...</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="ivAsetusNappi">
+          <property name="text">
+           <string>Asetukset...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../pic/pic.qrc">
+            <normaloff>:/pic/ratas.png</normaloff>:/pic/ratas.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="noudaNappi">
+          <property name="text">
+           <string>Nouda nyt</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../pic/pic.qrc">
+            <normaloff>:/pic/refresh.png</normaloff>:/pic/refresh.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="suosiCheck">
+     <property name="text">
+      <string>Lähetä ensisijaisesti verkkolaskuna</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>367</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../pic/pic.qrc"/>
+ </resources>
+ <connections/>
+</ui>

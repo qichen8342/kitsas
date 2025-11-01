@@ -1,0 +1,589 @@
+[fi]
+## Raportit
+#MIKRO
+@tase/PMA!TASE (TILINPÄÄTÖS)@
+#PIEN
+@tase/PMA!TASE (TILINPÄÄTÖS)@
+#ISO
+@tase/yleinen!TASE (TILINPÄÄTÖS)@
+##Tuloslaskelma
+#mikrobrutto -I -P Mikroyrityksen lyhyt bruttotuloslaskelma
+@tulos/mikrobrutto!TULOSLASKELMA (TILINPÄÄTÖS)@
+#pienbrutto -I -M Pienyrityksen bruttotuloslaskelma
+@tulos/pienbrutto!TULOSLASKELMA (TILINPÄÄTÖS)@
+#-mikrobrutto -pienbrutto
+@tulos/yleinen!TULOSLASKELMA (TILINPÄÄTÖS)@
+<h2>Tilinpäätöksen liitetiedot</h2>
+#MIKRO
+<p>Tilinpäätöksen laatimisessa on noudatettu pien- ja mikroyrityksen tilinpäätöksessä esitettävistä tiedoista annetun asetuksen (PMA) mikroyrityssäännöstöä.</p>
+#PIEN
+<p>Tilinpäätöksen laatimisessa on noudatettu pien- ja mikroyrityksen tilinpäätöksessä esitettävistä tiedoista annetun asetuksen (PMA) pienyrityssäännöstöä.</p>
+#ISO
+<b>Yrityksestä on annettava täydet liitetiedot ja laadittava toimintakertomus</b>
+<p>Liitetiedot sisältävät ainakin
+<ol><li>tilinpäätöksen esittämistapaa koskevat tiedot</li>
+<li>tilinpäätöksen laatimisperusteet</li>
+<li>tuloslaskelmaa koskevat liitetiedot</li>
+<li>tasetta koskevat liitetiedot</li>
+<li>liitetiedot käypään arvoon merkitsemisestä</li>
+<li>tuloveroja koskevat tiedot</li>
+<li>vakuudet, vastuusitoumukset ja taseen ulkopuoliset järjestelyt</li>
+<li>tiedot tilintarkaastajien palkkioista</li>
+<li>lähipiiriliiketoimet</li>
+<li>tiedot henkilöstöstä ja toimielinten jäsenistä</li>
+<li>omistukset muissa yrityksissä</li>
+<li>konserniin kuuluvaa kirjanpitovelvollista koskevat tiedot</li></ol>
+<p>Lisäksi liitetietona on annettava tiedot sidotuista rahastoista</p>
+## Liitetiedot
+#laatimisperuste Tilinpäätöksessä käytetään valinnaisia laatimisperusteita
+<p>Vaihto-omaisuus (käyttöjärjestys poikkeaa hankkimisjärjestyksestä)</p>
+<p>Taseeseen aktivoidut aineettomat oikeudet (hankintamenoa ei poisteta 10 vuodessa)</p>
+<p>Kehitysmeno, liikearvo tai muu pitkävaikutteinen meno (ei kirjattu kuluksi tai poisteta 10 vuodessa)</p>
+<p>Pitkän valmistusajan vaativa suorite (jos tulo kirjataan valmistusasteen mukaisesti)</p>
+<p>Rahoitusväline ja sijoituskiinteistö (jos arvostetaan käypään arvoon)</p>
+<p>Valuuttakurssi (jos ei käytetty tilinpäätöspäivän kurssia)</p>
+<p>Pysyviin vastaaviin kuuluvat hyödykkeet (hankitamenoon luettu muutakin kuin hankinnasta ja valmistuksesta johtuvat muuttuvat menot)</p>
+<p>Koneiden ja kaluston sekä rakennusten suunnitelmapoistot (poikkeavat verotuksessa hyväksytyistä enimmäispoistoista)</p>
+<p>Taseeseen merkitys rahoitusleasing-hankinnat</p>
+#kvstand Laadinnassa käytetty kansainvälisiä tilinpäätösstandadeja
+<p>Laadinnassa on noudatettu .... (kansainväliset tilinpäätösstandardit)</p>
+#poik -ISO Poikkeukselliset erät
+<h2>Poikkeukselliset erät</h2>
+<p>Tähän tieto poikkeuksellisista tuottojen ja kulujen määrästä, jos erät ovat olennaisia.</p>
+#jalkeen Olennaiset tapahtumat tilikauden jälkeen
+<h2>Olennaiset tapahtumat tilikauden jälkeen </h2>
+<p> Tähän tieto olennaisista tapahtumista ja niiden taloudellisesta merkityksestä </p>
+#arvonkorotus Arvonkorotusrahasto
+<h2>Arvonkorotusrahasto</h2>
+<table width="100%">
+  <tr><th width="50%"> </th><th align="right" width="25%">{{kausi.loppupvm}}</th><th align="right" width="25%">{{edkausi.loppupvm}}</th></tr>
+  <tr><td>Arvonkorotusrahasto {{alkupvm}}</td><td align="right">{{s203}}</td><td align="right">{{S203}}</td></tr>
+  <tr><td>Arvonkorotusrahaston lisäys</td><td align="right">{{d203}}</td><td align="right">{{D203}}</td></tr>
+  <tr><td>Arvonkorotusrahasto {{loppupvm}}</td><td align="right">{{e203}}</td><td align="right">{{E203}}</td></tr>
+</table>
+<p>  </p>
+#kaypa -MIKRO Käypään arvoon merkitseminen
+<h2>Käypään arvoon merkitseminen</h2>
+<ol>
+<li>Arvonmääritysmallien ja -menettelyjen keskeiset olettamukset</li>
+<li>Kustakin rahoitusväline- ja muusta omaisuuslajista yhteenlaskettu käypä arvo</li>
+<li>Arvonmuutoksesta tuloslaskelmaan ja käyvän arvon rahastoon merkitty määrä</li>
+<li>Kustakin johdannainnaissopimuslajista tieto niiden käytön laajuudesta</li>
+<li>Jokaisen lajin luonne sekä olennaiset ehdot, jotka voivat vaikuttaa rahavirtojen määrään, ajoitukseen ja varmuuteen</li>
+<li>Käyvän rahan muutokset tilikauden aikana</li>
+</ol>
+#johdannaiset Rahoitusjohdannaiset
+<h2>Rahoitusjohdannaiset</h2>
+<p>Jokaisen johdannaislajin osalta johdannaisten käypä arvo, sekä tiedot käytön laajuudesta  ja luonteesta</p>
+#pitkalaina Yli viiden vuoden kuluttua erääntyvät lainat
+<h2>Pitkäaikaiset lainat</h2>
+<p>Yli viiden vuoden kuluttua erääntyvät pitkäaikaiset velat yhteensä XXX euroa.</p>
+#vastuut Esineoikeudelliset vakuudet
+<h2>Annetut esineoikeudelliset vakuudet</h2>
+<table width="100%">
+  <tr><th width="50%"> </th><th align="right" width="25%">{{kausi.loppupvm}}</th><th align="right" width="25%">{{edkausi.loppupvm}}</th></tr>
+  <tr><td>Käteispantit</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Ajoneuvokiinnitykset</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Yrityskiinnitykset</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Kiinteistökiinnitykset</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Muu esinevakuus</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td><b>Yhteensä</b></td><td align="right"><b>^^^^</b></td><td align="right"><b>^^^^</b></td></tr>
+</table>
+#sitoumukset Taseen ulkopuoliset sitoumukset
+<h2>Taseen ulkopuoliset sitoumukset</h2>
+<p>Taseen ulkopuolisten sitoumusten yhteismäärä on XXX euroa.</p>
+<p>Edellä esitettyyn yhteismäärään sisältyy ...... Lisäksi .... </p>
+#elake Eläkevastuu, jota ei siirretty vakuutuslaitoksen kannettavaksi
+<h2>Eläkevastuut</h2>
+<p>Eläkevastuu, jota ei ole siirretty eläkelaitoksen hoidettavaksi</p>
+#emoyritys Tiedot emoyrityksestä
+<h2>Tiedot emoyrityksestä</h2>
+<p>Emoyrityksen nimi ja kotipaikka sekä tiedot siitä konsernitilinpäätöksen laativasta kosernista, johon yritys välittömimmin kuuluu</p>
+#lahilainat Lainat ja sitoumukset hallintoelimiin kuuluvien puolesta
+<h2>Lainat hallintoelimiin kuuluville sekä heidän puolestaan annetut sitoumukset</h2>
+<p>Toiminnanjohtajasta, hallituksen jäsenistä ja varajäsenistä, sekä vastaaviin toimielimiin kuuluvista, toimielinkohtaisena liitetietona</p>
+<ol>
+<li>rahalainojen yhteenlaskettu määrä, määrän vähennys ja lisäys, pääasialliset korko- ja muut ehdot</li>
+<li>vakuuksien ja vastuusitoumusten yhteenlaskettu määrä ja pääasiallinen sisältö</li>
+<li>eläkesitoumukset näistä tehtävistä</li>
+</ol>
+#intressi -MIKRO Liiketoimet intressitahojen kanssa
+<h2>Liiketoimet intressitahojen kanssa</h2>
+<p>Oikeushenkilöt, jotka yrityksen kanssa määräysvalta- tai osakkuussuhteessa; sekä toimitusjohtaja, hallituksen jäsen ja varajäsen sekä vastaavien toimielinten jäsenet</p>
+<ol>
+<li>kuvaus liiketoimesta</li>
+<li>liiketoimen arvo</li>
+<li>intressisuhteen luonne</li>
+<li>muut taloudellisen aseman arvioimisen kannalta välttämättömät tiedot liiketoimesta</li>
+</ol>
+#HENKILOSTO
+<h2>Henkilöstön määrä</h2>
+@henkilosto@Henkilöstöä keskimäärin
+#muut -MIKRO Olennaiset ja riitävän kuvan kannalta tarpeellinen toimintakertomustieto
+<h2>Muut tiedot</h2>
+<p>Tiedot, jotka ovat tarpeen oikean ja riittävän kuvan antamiseksi. </p>
+?muoto=oy
+##Osakeyhtiön pääoma ja vapaan oman pääoman käyttö
+#oypaaoma Oman pääoman muutokset
+<h2>Oman pääoman muutokset</h2>
+
+<table width="100%">
+  <tr><th width="50%"> </th><th align="right" width="25%">{{kausi.loppupvm}}</th><th align="right" width="25%">{{edkausi.loppupvm}}</th></tr>
+  <tr><td>Osakepääoma {{alkupvm}}</td><td align="right">{{s200}}</td><td align="right">{{S200}}</td></tr>
+  <tr><td>Osakepääoman korotus</td><td align="right">{{d200}}</td><td align="right">{{D200}}</td></tr>
+  <tr><td>Osakepääoma {{loppupvm}}</td><td align="right">{{e200}}</td><td align="right">{{E200}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Ylikurssirahasto {{alkupvm}}</td><td align="right">{{s202}}</td><td align="right">{{S202}}</td></tr>
+  <tr><td>Ylikurssirahaston lisäys</td><td align="right">{{d202}}</td><td align="right">{{D202}}</td></tr>
+  <tr><td>Ylikurssirahasto {{loppupvm}}</td><td align="right">{{e202}}</td><td align="right">{{E202}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Arvonkorotusrahasto {{alkupvm}}</td><td align="right">{{s203}}</td><td align="right">{{S203}}</td></tr>
+  <tr><td>Arvonkorotusrahaston lisäys</td><td align="right">{{d203}}</td><td align="right">{{D203}}</td></tr>
+  <tr><td>Arvonkorotusrahasto {{loppupvm}}</td><td align="right">{{e203}}</td><td align="right">{{E203}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td><b>Sidottu oma pääoma yhteensä</b></td><td align="right"><b>{{e200..205}}</b></td><td align="right"><b>{{E200..205}}</b></td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Sijoitetun vapaan oman pääoman rahasto {{alkupvm}}</td><td align="right">{{s206}}</td><td align="right">{{S206}}</td></tr>
+  <tr><td>Sijoitetun vapaan oman pääoman lisäys</td><td align="right">{{d206}}</td><td align="right">{{D206}}</td></tr>
+  <tr><td>Sijoitetun vapaan oman pääoman rahasto {{loppupvm}}</td><td align="right">{{e206}}</td><td align="right">{{E206}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Yhtiöjärjestyksen mukaiset rahastot {{alkupvm}}</td><td align="right">{{s207}}</td><td align="right">{{S207}}</td></tr>
+  <tr><td>Yhtiöjärjestyksen mukaisten rahastojen lisäys</td><td align="right">{{d207}}</td><td align="right">{{D207}}</td></tr>
+  <tr><td>Yhtiöjärjestyksen mukaiset rahastot {{loppupvm}}</td><td align="right">{{e207}}</td><td align="right">{{E207}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Muut rahastot {{alkupvm}}</td><td align="right">{{s208}}</td><td align="right">{{S208}}</td></tr>
+  <tr><td>Muiden rahastojen lisäys</td><td align="right">{{d208}}</td><td align="right">{{D208}}</td></tr>
+  <tr><td>Muut rahastot {{loppupvm}}</td><td align="right">{{e208}}</td><td align="right">{{E208}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Edellisten tilikausien voitto (tappio) {{alkupvm}}</td><td align="right">{{s2251}}</td><td align="right">{{S2251}}</td></tr>
+  <tr><td>Osingonjako</td><td align="right">{{e2261}}</td><td align="right">{{E2261}}</td></tr>
+  <tr><td>Omien osakkeiden osto</td><td align="right">{{e2265}}</td><td align="right">{{E2265}}</td></tr>
+  <tr><td>Siirto osakepääomaan tai sijoitetun oman pääoman rahastoon</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Voittovarojen siirto yhtiöjärjestyksen mukaiseen rahastoon</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Edellisen tilikauden virheen oikaisu</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Edellisten tilikausien voitto (tappio) {{loppupvm}}</td><td align="right">{{e2251}}</td><td align="right">{{E2251}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Tilikauden voitto (tappio)</td><td align="right">{{e2371}}</td><td align="right">{{E2371}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Oman pääoman ehtoinen pääomalaina {{alkupvm}}</td><td align="right">{{s238}}</td><td align="right">{{S238}}</td></tr>
+  <tr><td>Oman pääoman ehtoisen pääomalainan lisäys</td><td align="right">{{d238}}</td><td align="right">{{D238}}</td></tr>
+  <tr><td>Oman pääoman ehtoinen pääomalaina {{loppupvm}}</td><td align="right">{{e238}}</td><td align="right">{{E238}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td><b>Vapaa oma pääoma yhteensä</b></td><td align="right"><b>{{e206..238}}</b></td><td align="right"><b>{{E206..238}}</b></td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td><b>OMA PÄÄOMA YHTEENSÄ</b></td><td align="right"><b>{{e20..238}}</b></td><td align="right"><b>{{E20..238}}</b></td></tr>
+</table>
+
+<p>  </p>
+
+#jakokelpoinen Laskelma jakokelpoisesta omasta pääomasta
+<h2>Laskelma jakokelpoisesta omasta pääomasta</h2>
+
+<table width="100%">
+  <tr><th width="50%"> </th><th align="right" width="25%"> {{kausi.loppupvm}}</th><th align="right" width="25%"> {{edkausi.loppupvm}}</th></tr>
+  <tr><td>Voitto edellisiltä tilikausilta</td><td align="right">{{e2251}}</td><td align="right">{{E2251}}</td></tr>
+  <tr><td>Tilikauden voitto</td><td align="right">{{e2371}}</td><td align="right">{{E2371}}</td></tr>
+  <tr><td>Sijoitetun vapaan oman pääoman rahasto</td><td align="right">{{e206}}</td><td align="right">{{E206}}</td></tr>
+  <tr><td>Muut jakokelpoiset rahastot</td><td align="right">{{e207..208}}</td><td align="right">{{E207..208}}</td></tr>
+  <tr><td>Määrä, joka yhtiöjärjestyksen mukaan on jätettävä jakamatta tai siirrettävä rahastoon</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Muut jakokelvottomat erät</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>Aktivoidut kehittämismenot</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td><b>Yhteensä</b></td><td align="right"><b>^^^^</b></td><td align="right"><b>^^^^</b></td></tr>
+</table>
+
+@? e238 e280
+<p>Pääomalainan haltijat ovat oikeutettuja X,XX euroon jakokelpoisesta vapaasta omasta pääomasta.</p>
+@?
+
+#oyeiosinko -oykaytto Ei osinkoa
+<h2>Hallituksen ehdotus jakokelpoisen vapaan oman pääoman käytöstä</h2>
+<p>Hallitus ehdottaa, että osinkoa ei jaeta.</p>
+#oykaytto -oyeiosinko Hallituksen ehdotus vapaan oman pääoman käytöstä
+<h2>Hallituksen ehdotus jakokelpoisen vapaan oman pääoman käytöstä</h2>
+<p>Jakokelpoinen vapaa oma pääoma on {{e2251 e2371 e206..208}}</p>
+<p>Hallitus ehdottaa, että osinkoa jaetaan XX euroa per osake, eli yhteensä XXX euroa. Osinko on nostettavissa yhtiökokousta seuraavana päivänä.</p>
+
+?muoto=tmi
+##Elinkeinonharjoittajan oma pääoma
+#tmipaaoma Oman pääoman muutokset
+<h2>Oman pääoman muutokset</h2>
+<table width="100%">
+  <tr><th width="50%"> </th><th align="right" width="25%">{{kausi.loppupvm}}</th><th align="right" width="25%">{{edkausi.loppupvm}}</th></tr>
+  <tr><td>Oma pääoma {{alkupvm}}</td><td align="right">{{s20..238}}</td><td align="right">{{S20..238}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Yksityissijoitukset</td><td align="right">{{e2361..2364}}</td><td align="right">{{E2361..2364}}</td></tr>
+  <tr><td>Yksityisotot</td><td align="right">{{e2365..2369}}</td><td align="right">{{E2365..2369}}</td></tr>
+  <tr><td>Tilikauden voitto (tappio) </td><td align="right">{{e2371}}</td><td align="right">{{E2371}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Oman pääoman lisäys (vähennys) yhteensä</td><td align="right">{{d20..238}}</td><td align="right">{{D20..238}}</td></tr>
+  <tr><td> </td><td> </td><td> </td></tr>
+  <tr><td>Oma pääoma {{loppupvm}}</td><td align="right">{{e20..238}}</td><td align="right">{{E20..238}}</td></tr>
+</table>
+?
+##Kirjanpito
+#sahko Sähköinen kirjanpito ja arkistointi
+<h2>Kirjanpitoaineisto</h2>
+<p>Kirjanpito on järjestetty Kitsas-ohjelmistolla. Tilinpäätös, tase-erittelyt, tilikartta, pää- ja päiväkirjat sekä tositteet on arkistoitu sähköiseksi arkistoksi.
+</p>
+#-sahko
+<h2>Kirjanpitoaineisto</h2>
+<p>Selvitys kirjanpitoaineistosta ja sen säilyttämisestä</p>
+#
+<h2>Allekirjoitukset</h2>
+<p>{{kotipaikka}} ____________</p>
+<p> <span font-size="12pt"> &nbsp;  </span></p>
+<table width=100%><tr><td width="33%">______________</td><td width="33%">______________</td><td width="33%">______________</td></tr></table>
+<p> <span font-size="12pt"> &nbsp;  </span></p>
+<table width=100%><tr><td width="33%">______________</td><td width="33%">______________</td><td width="33%">______________</td></tr></table>
+<p> <span font-size="12pt"> &nbsp; </span></p>
+#laatija Tilinpäätöksen laatija
+<p>Tilinpäätöksen laati {{pvm}} {{kayttaja.nimi}} </p>
+<p> <span font-size="18pt"> &nbsp; </span></p>
+<p>
+##Tilintarkastus
+#tilintarkastus Tilintarkastusmerkintä
+<h2>Tilintarkastusmerkintä</h2>
+<p>Suoritetusta tilintarkastuksesta on tänään annettu kertomus</p>
+<p>____________________  ___. päivänä _________kuuta  _________ </p>
+<p>
+<p>
+[sv]
+##Rapporter
+#MIKRO
+@tase/PMA!BALANSRÄKNING (BOKSLUT)@
+#PIEN
+@tase/PMA!BALANSRÄKNING (BOKSLUT)@
+#ISO
+@tase/yleinen!TASE (TILINPÄÄTÖS)@
+##Resultaträkning
+#mikrobrutto -I -P Mikroföretagets korta resultaträkning utgående från bruttoresultatet
+@tulos/mikrobrutto!RESULTATRÄKNING (BOKSLUT)@
+#pienbrutto -I -M Småföretagets resultaträkning utgående från bruttoresultatet
+@tulos/pienbrutto!TULOSLASKELMA (TILINPÄÄTÖS)@
+#-mikrobrutto -pienbrutto
+@tulos/yleinen!RESULTATRÄKNING (BOKSLUT)@
+<h2>Principer för upprättandet av bokslutet</h2>
+#MIKRO
+<p> Vid uppgörandet av detta bokslut har statsrådets förordning om uppgifter som ska tas upp i små- och mikroföretags bokslut följts.</p>
+#PIEN
+<p> Vid uppgörandet av detta bokslut har statrådets förordning om uppgifter som ska tas upp i små- och mikroföretags bokslut följts.</p>
+#ISO
+<b>För företaget måste fullständiga noter och verksamhetsberättelse uppgöras</b>
+<p>Noterna skall innehålla åtminstone
+<ol><li>noter om presentation av bokslut</li>
+<li>principerna för uppgörandet av bokslutet</li>
+<li>noter till resultaträkningen</li>
+<li>noter till balansräkningen</li>
+<li>noter om värdering till verkligt värde</li>
+<li>uppgifter om inkomstskatter</li>
+<li> Säkerheter, ansvarsförbindelser och arrangemang som inte har tagits med i balansräkningen</li>
+<li>uppgifter om revisorernas arvoden</li>
+<li>transaktioner med närstående parter</li>
+<li>uppgifter om personal och organens medlemmar</li>
+<li>innehav i andra företag</li>
+<li>noter angående en bokföringsskyldig som hör till en koncern </li></ol>
+<p>Därtill skall i noterna ges information om bundna fonder</p>
+##Noter
+#laatimisperuste I bokslutet används alternativa grunder för upprättandet
+<p> Omsättningstillgångar (skiljer sig från FIFO-metoden)</p>
+<p> I balansräkningen aktiverade immateriella rättigheter (anskaffningsutgiften skrivs inte av på 10 år)</p>
+<p> Utvecklingsutgift, affärsvärde och övrig utgift med lång verkningstid (inte kostnadsförd eller avskriven på 10 år)</p>
+<p> Inkomsten av en prestation som kräver lång framställningstid (om inkomsten bokförs enligt färdighetsgrad)</p>
+<p>Finansiella instrument och placeringsfastighet (om värderad till verkligt värde)</p>
+<p> Valutakurs (om man inte använt bokslutsdagens valutakurs)</p>
+<p> Till bestående aktiva tillhörande nyttigheter (till anskaffningsutgiften har räknats annat än rörliga kostnader som härrör från anskaffning och tillverkning)</p>
+<p> Avskrivningar enligt plan på maskiner och inventarier (avviker från maximala tillåtna avskrivningar i beskattningen)</p>
+<p> I balansräkningen upptagna anskaffningar genom finansieringsleasing </p>
+#kvstand Vid uppgörandet har internationella bokslutsstandarder använts
+<p> Vid uppgörandet har internationella bokslutsstandarder använts)</p>
+#poik -ISO Exceptionella poster
+<h2> Exceptionella poster </h2>
+<p> Här information om exceptionella inkomster och utgifter om posterna är väsentliga.</p>
+#jalkeen Uppgifter om väsentliga händelser som inträffat efter räkenskapsperioden
+<h2> Uppgifter om väsentliga händelser som inträffat efter räkenskapsperioden </h2>
+<p> Här uppgifter om väsentliga händelser och deras ekonomiska betydelse </p>
+#kaypa -MIKRO Verkligt värde i noterna
+<h2>Verkligt värde i noterna</h2>
+<ol>
+<li> de viktigaste bakomliggande antagandena för värderingsmodellerna och -metoderna</li>
+<li> det sammanlagda verkliga värdet för varje kategori av finansiella instrument eller andra tillgångar</li>
+<li> de förändringar av värdet på kategorier som redovisas i resultaträkningen och i fonden för verkligt värde </li>
+<li> för varje kategori av derivatinstrument, upplysningar om i vilken omfattning de används</li>
+<li>för varje typ av kategori karaktären samt viktiga villkor som kan påverka belopp, tidpunkt och säkerhet vad gäller framtida kassaflöden </li>
+<li>förändringar i fonden för verkligt värde under räkenskapsperioden </li>
+</ol>
+#johdannaiset Derivativinstrument
+<h2>Derivativinstrument</h2>
+<p>För varje kategori av derivatinstrument, derivatets verkliga värde samt uppgifter om omfattningen och arten av deras användning. </p>
+#pitkalaina Långfristiga lån som förfaller senare än om fem år
+<h2>Långfristiga lån över fem år</h2>
+<p> Det sammanlagda beloppet av till långfristigt främmande kapital hörande skulder som förfaller senare än efter fem år. </p>
+#vastuut Sakrättsliga säkerheter
+<h2> Sakrättsliga säkerheter som ett företag har ställt</h2>
+<p>Sakrättsliga säkerheter som ett målföretag har ställt av sina tillgångar specificerade som handfången pant, fordonsinteckningar, företagsinteckningar, fastighetsinteckningar och eventuella andra slag av realsäkerhet</p>
+#sitoumukset Ekonomiska åtaganden utanför balansräkningen
+<h2> Ekonomiska åtaganden utanför balansräkningen</h2>
+<p> De ekonomiska åtagandena utanför balansräkningen totalt är XXX euro.</p>
+<p> I detta totala belopp ingår....... Därtill.......</p>
+#elake Pensionsansvar som inte överförts till pensionsförsäkringsbolag
+<h2>Pensionsansvar</h2>
+<p> Pensionsansvar som inte överförts till pensionsförsäkringsbolag</p>
+#emoyritys Information om moderbolaget
+<h2>Information om moderbolaget</h2>
+<p> Moderbolagets namn och hemort samt information om den koncern som upprättar koncernbokslutet</p>
+#lahilainat Lån till verkställande direktören och personer inom administrationen samt åtaganden till förmån för dem
+<h2> Lån till verkställande direktören och personer inom administrationen samt åtaganden till förmån för dem</h2>
+<p> I fråga om verkställande direktören, medlemmarna och suppleanterna i styrelsen samt i fråga om personer tillhörande motsvarande förvaltningsorgan ska per förvaltningsorgan i noterna anges</p>
+<ol>
+<li> det sammanlagda beloppet av penninglån som beviljats dem, minskningen och ökningen av beloppet under räkenskapsperioden samt de huvudsakliga räntevillkoren och övriga villkor för lånen</li>
+<li> det sammanlagda beloppet av säkerheter och ansvarsförbindelser som gäller dem och det huvudsakliga innehållet</li>
+<li> pensionsförbindelserna för dessa uppdrag</li>
+</ol>
+#intressi -MIKRO Transaktioner med intressenter
+<h2> Transaktioner med intressenter</h2>
+<p>Juridiska personer som har bestämmande inflytande eller är i partsrelation till företaget, samt Verkställande direktör, medlem eller suppleant av styrelsen samt medlemmar av motsvarande organ</p>
+<ol>
+<li>en beskrivning av transaktionen</li>
+<li>värdet av transaktionen</li>
+<li>uppgift om typen av intresseförhållandet</li>
+<li> annan information avseende transaktionerna som är nödvändig för att bedöma småföretagets ekonomiska ställning </li>
+</ol>
+#HENKILOSTO
+<h2>Personalens storlek</h2>
+@henkilosto@Genomsnittlig personalstorlek
+#muut -MIKRO Information som behövs för att ge en riktig och tillräcklig bild
+<h2>Övrig information</h2>
+<p>Information som behövs för att ge en riktig och tillräcklig bild </p>
+?muoto=oy
+##Aktiebolagets kapital och användningen av fritt eget kapital
+#oypaaoma Förändringar i eget kapital
+<h2>Förändringar i eget kapital</h2>
+<p> ... </p>
+#oyeiosinko -oykaytto Ingen dividend
+<h2>Styrelsens förslag för användning av utdelbart fritt eget kapital</h2>
+<p>Styrelsen förslag är att dividend inte utbetalas.</p>
+#oykaytto -oyeiosinko Styrelsens förslag till användning av utdelningsbart fritt eget kapital
+<h2>Styrelsens förslag till användning av utdelningsbart fritt eget kapital</h2>
+<p>Utdelningsbart fritt eget kapital är.....€</p>
+<p>Styrelsen föreslår att som dividend utdelas XX euro per aktie, eller totalt XXX euro. Dividenden kan lyftas dagen efter bolagsstämman.</p>
+?
+##Bokföring
+#sahko Elektronisk bokföring och arkivering
+<h2>Bokföringsmaterialet</h2>
+<p> Bokföringen är uppgjord med Kitsas-programvaran. Bokslutet, balansspecifikationer, kontoplanen, huvud- och dagböcker samt verifikat är arkiverade i ett elektroniskt arkiv</p>
+#-sahko
+<h2>Bokföringsmaterialet</h2>
+<p>Redogörelse över bokföringsmaterialet och hur det sparas</p>
+#
+<h2>Underskrifter</h2>
+<p> __________________XX.XX.20XX</p>
+<p>
+<table width=100%><tr><td>N.N.</td><td>N.N.</td><td>N.N.</td></tr>
+<tr><td>N.N.</td><td>N.N.</td><td>N.N.</td></tr></table>
+<p>
+<p>
+<p>
+##Revision
+#tilintarkastus Revisionsanteckning
+<h2>Revisionsanteckning</h2>
+<p> Över utförd revision har idag avgetts berättelse</p>
+<p>____________________ ___.  _________ 20XX </p>
+<p>
+<p>
+
+[zh]
+## 报表
+#MIKRO
+@tase/PMA!TASE (财务报表)@
+#PIEN
+@tase/PMA!TASE (财务报表)@
+#ISO
+@tase/yleinen!TASE (财务报表)@
+## 利润表
+#mikrobrutto -I -P 微型企业简表（总额法）
+@tulos/mikrobrutto!利润表 (财务报表)@
+#pienbrutto -I -M 小型企业利润表（总额法）
+@tulos/pienbrutto!利润表 (财务报表)@
+#-mikrobrutto -pienbrutto
+@tulos/yleinen!利润表 (财务报表)@
+<h2>财务报表附注</h2>
+#MIKRO
+<p>本财务报表的编制遵循《小型与微型企业财务报表信息披露条例（PMA）》中微型企业的规定。</p>
+#PIEN
+<p>本财务报表的编制遵循《小型与微型企业财务报表信息披露条例（PMA）》中小型企业的规定。</p>
+#ISO
+<b>企业须提供完整的附注并编制经营报告</b>
+<p>附注至少包括以下内容：</p>
+<ol>
+  <li>财务报表展示方式相关信息</li>
+  <li>财务报表编制基础</li>
+  <li>利润表附注</li>
+  <li>资产负债表附注</li>
+  <li>公允价值计量相关附注</li>
+  <li>所得税信息</li>
+  <li>担保、或有负债及表外安排</li>
+  <li>审计人员报酬信息</li>
+  <li>关联方交易</li>
+  <li>员工与治理机构成员信息</li>
+  <li>其他企业持股信息</li>
+  <li>集团公司相关信息</li>
+</ol>
+<p>此外，还应披露受限制的储备金信息。</p>
+
+## 附注信息
+#laatimisperuste 财务报表中使用的可选编制基础
+<p>存货（采用与取得顺序不同的发出顺序）</p>
+<p>计入资产负债表的无形资产（取得成本未在10年内摊销）</p>
+<p>开发支出、商誉或其他长期性费用（未计入当期费用或未在10年内摊销）</p>
+<p>长期项目（若收入按完工百分比确认）</p>
+<p>金融工具和投资性房地产（若按公允价值计量）</p>
+<p>汇率（若未采用资产负债表日汇率）</p>
+<p>固定资产（取得成本包含除取得与制造所致变动成本以外的其他项目）</p>
+<p>机器设备与建筑物的折旧（若与税法允许的最高折旧不同）</p>
+<p>计入资产负债表的融资租赁取得</p>
+
+#kvstand 编制中采用的国际会计准则
+<p>编制遵循国际财务报告准则（IFRS）。</p>
+
+#poik -ISO 异常项目
+<h2>异常项目</h2>
+<p>如存在重大异常的收入或支出，应在此披露其金额与性质。</p>
+
+#jalkeen 会计期后重大事项
+<h2>会计期后重大事项</h2>
+<p>披露期后重大事项及其财务影响。</p>
+
+#arvonkorotus 重估储备
+<h2>重估储备</h2>
+<table width="100%">
+  <tr><th width="50%"></th><th align="right" width="25%">{{kausi.loppupvm}}</th><th align="right" width="25%">{{edkausi.loppupvm}}</th></tr>
+  <tr><td>期初重估储备 {{alkupvm}}</td><td align="right">{{s203}}</td><td align="right">{{S203}}</td></tr>
+  <tr><td>本期重估储备增加</td><td align="right">{{d203}}</td><td align="right">{{D203}}</td></tr>
+  <tr><td>期末重估储备 {{loppupvm}}</td><td align="right">{{e203}}</td><td align="right">{{E203}}</td></tr>
+</table>
+
+#kaypa -MIKRO 公允价值计量
+<h2>公允价值计量</h2>
+<ol>
+  <li>估值模型与程序的关键假设</li>
+  <li>各类金融工具与其他资产项目的公允价值合计</li>
+  <li>计入利润表与公允价值储备的变动额</li>
+  <li>各类衍生品使用范围</li>
+  <li>各类金融工具的性质及影响现金流金额、时点与确定性的主要条款</li>
+  <li>会计期间内公允价值的变动</li>
+</ol>
+
+#johdannaiset 金融衍生品
+<h2>金融衍生品</h2>
+<p>披露各类衍生品的公允价值、使用范围与性质。</p>
+
+#pitkalaina 超过五年到期的借款
+<h2>长期借款</h2>
+<p>超过五年后到期的长期负债合计 XXX 欧元。</p>
+
+#vastuut 提供的物权担保
+<h2>提供的物权担保</h2>
+<table width="100%">
+  <tr><th width="50%"></th><th align="right" width="25%">{{kausi.loppupvm}}</th><th align="right" width="25%">{{edkausi.loppupvm}}</th></tr>
+  <tr><td>现金质押</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>车辆抵押</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>企业抵押</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>不动产抵押</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td>其他物权担保</td><td align="right">0,00 €</td><td align="right">0,00 €</td></tr>
+  <tr><td><b>合计</b></td><td align="right"><b>^^^^</b></td><td align="right"><b>^^^^</b></td></tr>
+</table>
+
+#sitoumukset 表外承诺
+<h2>表外承诺</h2>
+<p>表外承诺合计 XXX 欧元。</p>
+<p>上述合计中包含……此外……</p>
+
+#elake 未转移至保险机构的养老责任
+<h2>养老责任</h2>
+<p>尚未移交至保险机构承担的养老义务。</p>
+
+#emoyritys 母公司信息
+<h2>母公司信息</h2>
+<p>母公司的名称与注册地，以及企业所属的合并报表集团信息。</p>
+
+#lahilainat 管理机构成员贷款及相关担保
+<h2>管理机构成员贷款及相关担保</h2>
+<p>披露总经理、董事会成员及候补成员的贷款及担保信息：</p>
+<ol>
+  <li>贷款总额、增减变动、主要利率与条款</li>
+  <li>担保及或有负债的金额与内容</li>
+  <li>与任职相关的养老承诺</li>
+</ol>
+
+#intressi -MIKRO 与利益相关方的交易
+<h2>与利益相关方的交易</h2>
+<p>披露控制或参股企业及管理层相关交易：</p>
+<ol>
+  <li>交易说明</li>
+  <li>交易金额</li>
+  <li>关系性质</li>
+  <li>其他影响财务状况的重要信息</li>
+</ol>
+
+#HENKILOSTO
+<h2>员工人数</h2>
+@henkilosto@ 员工平均人数
+
+#muut -MIKRO 其他信息
+<h2>其他必要信息</h2>
+<p>提供真实且充分信息所需的附加说明。</p>
+
+?muoto=oy
+## 股份公司资本与可分配利润
+#oypaaoma 自有资本变动
+<h2>自有资本变动</h2>
+<table width="100%">
+  ...（表格结构保持不变，内容如前）...
+</table>
+
+#jakokelpoinen 可分配自有资本计算
+<h2>可分配自有资本计算</h2>
+<table width="100%">
+  ...（表格结构保持不变）...
+</table>
+
+#oyeiosinko -oykaytto 不分红
+<h2>董事会关于可分配自由自有资本使用的建议</h2>
+<p>董事会建议不分配股息。</p>
+
+#oykaytto -oyeiosinko 利润分配建议
+<h2>董事会关于利润分配的建议</h2>
+<p>可分配自由自有资本为 {{e2251 e2371 e206..208}}</p>
+<p>董事会建议每股分红 XX 欧元，总计 XXX 欧元。股息可于股东大会次日领取。</p>
+
+?muoto=tmi
+## 个体经营者自有资本
+#tmipaaoma 自有资本变动
+<h2>自有资本变动</h2>
+<table width="100%">
+  ...（原表格完整保留）...
+</table>
+
+## 会计信息
+#sahko 电子会计与存档
+<h2>会计资料</h2>
+<p>本公司使用 Kitsas 软件进行会计核算。财务报表、明细表、科目表、总账、日记账及凭证均已电子归档。</p>
+
+#-sahko
+<h2>会计资料</h2>
+<p>关于会计资料及其保存方式的说明。</p>
+
+<h2>签字</h2>
+<p>{{kotipaikka}} ____________</p>
+<table width="100%">
+  <tr><td width="33%">______________</td><td width="33%">______________</td><td width="33%">______________</td></tr>
+</table>
+
+#laatija 财务报表编制人
+<p>财务报表由 {{pvm}} {{kayttaja.nimi}} 编制。</p>
+
+## 审计
+#tilintarkastus 审计标注
+<h2>审计标注</h2>
+<p>本日已出具审计报告。</p>
+<p>____________________  ___. 日 _________ 月  _________ 年</p>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LaskuRiviDialogi</class>
+ <widget class="QDialog" name="LaskuRiviDialogi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>865</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Laskurivin tiedot</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="1,1">
+   <item row="4" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="title">
+      <string>Lisätiedot</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPlainTextEdit" name="lisatietoEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>128</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Tuotetiedot</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Nimike</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="nimikeEdit">
+        <property name="maxLength">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Kuvaus</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="kuvausEdit">
+        <property name="maxLength">
+         <number>512</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="koodiLabel">
+        <property name="text">
+         <string>Tuotekoodi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="koodiEdit">
+        <property name="maxLength">
+         <number>62</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QGroupBox" name="jaksoGroup">
+     <property name="title">
+      <string>Toimituspäivä</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_6">
+      <item row="0" column="0">
+       <widget class="QLabel" name="alkupvmLabel">
+        <property name="text">
+         <string>Alkupäivä</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="loppupvmLabel">
+        <property name="text">
+         <string>Loppupäivä</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="KpDateEdit" name="alkupvmEdit"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="KpDateEdit" name="loppupvmEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Help|QDialogButtonBox::StandardButton::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Määrä</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>Toimitettu</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>Jälkitoimitetaan</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Laskutetaan</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Yksikkö</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="YksikkoCombo" name="yksikkoCombo">
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="KpKplEdit" name="toimitettuEdit"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="KpKplEdit" name="jalkitoimitusEdit"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="KpKplEdit" name="laskutetaanEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Yksikköhinta</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Veroton</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="KpEuroEdit" name="aNetto"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="aBruttoLabel">
+        <property name="text">
+         <string>Verollinen</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="KpEuroEdit" name="aBrutto"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="alvLabel">
+        <property name="text">
+         <string>Arvonlisävero</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="LaskuAlvCombo" name="alvCombo"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>Tiliöinti</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_5">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Kirjanpitotili</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="TilinvalintaLine" name="tiliEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="kohdennusLabel">
+        <property name="text">
+         <string>Kohdennus</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="KohdennusCombo" name="kohdennusCombo"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="merkkausLabel">
+        <property name="text">
+         <string>Merkkaukset</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="CheckCombo" name="merkkausCombo"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Alennus</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Prosentti</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QDoubleSpinBox" name="alennusSpin">
+        <property name="suffix">
+         <string> %</string>
+        </property>
+        <property name="maximum">
+         <double>100.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Veroton</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="KpEuroEdit" name="euroAleEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>Syy</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="alennusSyyCombo"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="bruttoAleLabel">
+        <property name="text">
+         <string>Verollinen</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="KpEuroEdit" name="bruttoAleEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="title">
+      <string>Yhteishinta</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_7">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>Veroton</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="KpEuroEdit" name="nettoYhteensa"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="verollinenLabel">
+        <property name="text">
+         <string>Verollinen</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="KpEuroEdit" name="verollinenEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KohdennusCombo</class>
+   <extends>QComboBox</extends>
+   <header location="global">tools/kohdennuscombo.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TilinvalintaLine</class>
+   <extends>QLineEdit</extends>
+   <header>db/tilinvalintaline.h</header>
+  </customwidget>
+  <customwidget>
+   <class>YksikkoCombo</class>
+   <extends>QComboBox</extends>
+   <header location="global">laskutus/laskudlg/yksikkocombo.h</header>
+  </customwidget>
+  <customwidget>
+   <class>LaskuAlvCombo</class>
+   <extends>QComboBox</extends>
+   <header location="global">laskutus/laskualvcombo.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CheckCombo</class>
+   <extends>QComboBox</extends>
+   <header location="global">tools/checkcombo.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KpEuroEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">tools/kpeuroedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KpKplEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">tools/kpkpledit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KpDateEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">tools/kpdateedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>nimikeEdit</tabstop>
+  <tabstop>kuvausEdit</tabstop>
+  <tabstop>koodiEdit</tabstop>
+  <tabstop>toimitettuEdit</tabstop>
+  <tabstop>jalkitoimitusEdit</tabstop>
+  <tabstop>laskutetaanEdit</tabstop>
+  <tabstop>yksikkoCombo</tabstop>
+  <tabstop>tiliEdit</tabstop>
+  <tabstop>kohdennusCombo</tabstop>
+  <tabstop>merkkausCombo</tabstop>
+  <tabstop>aNetto</tabstop>
+  <tabstop>aBrutto</tabstop>
+  <tabstop>alvCombo</tabstop>
+  <tabstop>alennusSpin</tabstop>
+  <tabstop>euroAleEdit</tabstop>
+  <tabstop>bruttoAleEdit</tabstop>
+  <tabstop>alennusSyyCombo</tabstop>
+  <tabstop>alkupvmEdit</tabstop>
+  <tabstop>loppupvmEdit</tabstop>
+  <tabstop>nettoYhteensa</tabstop>
+  <tabstop>verollinenEdit</tabstop>
+  <tabstop>lisatietoEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>LaskuRiviDialogi</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>1110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>LaskuRiviDialogi</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>1110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

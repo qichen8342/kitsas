@@ -1,0 +1,269 @@
+/*
+   Copyright (C) 2019 Arto Hyvättinen
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+#include "tiedotsivu.h"
+#include "kieli/monikielinen.h"
+#include "ui_uusitiedot.h"
+#include "validator/ibanvalidator.h"
+#include "validator/ytunnusvalidator.h"
+#include "rekisteri/postinumerot.h"
+#include "pilvi/pilvimodel.h"
+
+#include "db/kirjanpito.h"
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QJsonDocument>
+#include <QMessageBox>
+
+#include "rekisteri/postinumerot.h"
+
+TiedotSivu::TiedotSivu(UusiVelho *wizard) :
+    ui( new Ui::UusiTiedot),
+    velho( wizard )
+{
+    ui->setupUi(this);
+
+    setTitle(tr("Organisaation tiedot"));
+    ui->tiliLine->setValidator( new IbanValidator );
+    ui->ytunnusEdit->setValidator( new YTunnusValidator);
+    ui->bicEdit->setValidator(new QRegularExpressionValidator(QRegularExpression(R"(^[A-Z]{6}[A-Z0-9]{2}([A-Z0-9]{3})?$)"), this));
+
+
+    registerField("nimi*", ui->nimiEdit);
+    registerField("tili", ui->tiliLine);
+    registerField("ytunnus", ui->ytunnusEdit);
+
+    connect(ui->postinumeroEdit, &QLineEdit::textEdited, this, [this] (const QString& numero) { this->ui->kaupunkiEdit->setText( Postinumerot::toimipaikka(numero)); });
+    connect(ui->tiliLine, &QLineEdit::textEdited, this, &TiedotSivu::haeBic);
+
+    haeBic();
+
+}
+
+void TiedotSivu::initializePage()
+{
+    // Haetaan muodot
+    ui->muotoList->clear();
+    QVariantMap muotoMap = velho->asetukset_.value("muodot").toMap();
+    QMapIterator<QString,QVariant> muotoIter(muotoMap);
+    while( muotoIter.hasNext()) {
+        muotoIter.next();
+        Monikielinen kk( muotoIter.value() );
+        QListWidgetItem *item = new QListWidgetItem(kk.teksti(), ui->muotoList);
+        item->setData(Qt::UserRole, muotoIter.key());
+    }
+    ui->muotoList->setCurrentRow(0);
+
+    // Haetaan laajuudet
+    ui->laajuusList->clear();
+    QVariantMap laajuusMap = velho->asetukset_.value("laajuudet").toMap();
+    QMapIterator<QString,QVariant> laajuusIter(laajuusMap);
+    while( laajuusIter.hasNext()) {
+        laajuusIter.next();
+        Monikielinen kk( laajuusIter.value() );
+        QListWidgetItem *item = new QListWidgetItem(kk.teksti(), ui->laajuusList);
+        item->setData(Qt::UserRole, laajuusIter.key());
+    }
+
+    if( field("ytunnus").toString().isEmpty() ) {
+        ui->laajuusList->setCurrentRow( velho->asetukset_.value("laajuus").toInt() - 1);
+    } else {
+        // Kitsas PRO oletuksena kaikki tilit näkyvissä
+        ui->laajuusList->setCurrentRow( ui->laajuusList->count() - 1 );
+    }
+
+    connect( ui->ytunnusEdit , &QLineEdit::textEdited, this, &TiedotSivu::haeytunnarilla);
+
+    if( !ui->ytunnusEdit->text().isEmpty())
+        haeytunnarilla();
+}
+
+bool TiedotSivu::validatePage()
+{
+    if( !ui->ytunnusEdit->text().isEmpty() && !YTunnusValidator::kelpaako(ui->ytunnusEdit->text())) {
+        QMessageBox::critical(this, tr("Perustiedot"), tr("Y-tunnuksen muoto virheellinen"));
+        return false;
+    }
+    if( !ui->tiliLine->text().isEmpty() && !IbanValidator::kelpaako(ui->tiliLine->text())) {
+        QMessageBox::critical(this, tr("Perustiedot"), tr("Tilinumeron muoto virheellinen. Tilinumero on syötettävä IBAN-muodossa"));
+        return false;
+    }
+
+    if( !ui->bicEdit->text().isEmpty() && !ui->bicEdit->hasAcceptableInput()) {
+        QMessageBox::critical(this, tr("Perustiedot"), tr("BIC-numeron muoto virheellinen."));
+        return false;
+    }
+
+    velho->asetukset_.insert("Nimi", ui->nimiEdit->text());
+    if( !ui->ytunnusEdit->text().isEmpty())
+        velho->asetukset_.insert("Ytunnus", ui->ytunnusEdit->text().simplified());
+
+    if( !ui->osoiteEdit->toPlainText().isEmpty())
+        velho->asetukset_.insert("Katuosoite", ui->osoiteEdit->toPlainText());
+    if( !ui->postinumeroEdit->text().isEmpty())
+        velho->asetukset_.insert("Postinumero", ui->postinumeroEdit->text());
+    if( !ui->kaupunkiEdit->text().isEmpty())
+        velho->asetukset_.insert("Kaupunki", ui->kaupunkiEdit->text());
+    if( !ui->kotipaikkaEdit->text().isEmpty())
+        velho->asetukset_.insert("Kotipaikka", ui->kotipaikkaEdit->text());
+    if( !ui->emailEdit->text().isEmpty())
+        velho->asetukset_.insert("Email", ui->emailEdit->text());
+    if( !ui->webEdit->text().isEmpty())
+        velho->asetukset_.insert("Kotisivu", ui->webEdit->text());
+    if( !ui->puhelinEdit->text().isEmpty())
+        velho->asetukset_.insert("Puhelin", ui->puhelinEdit->text());
+
+    velho->asetukset_.insert("muoto", ui->muotoList->currentItem()->data(Qt::UserRole).toString());
+    velho->asetukset_.insert("laajuus", ui->laajuusList->currentItem()->data(Qt::UserRole).toString());
+
+    // 3.3 beta: VAT-kirjanpidon luominen
+    // 5.0-beta.1 Myös jos alustettava kirjanpito
+    // 5.3: Korjataan ehto: Jos käyttäjän plan ei 10 (Kitsas Kerho)
+    const bool voiLuodaVatKirjanpidon = kp()->pilvi()->kayttaja().planId() != 10  || wizard()->startId() == UusiVelho::ALUSTUS;
+
+    if( velho->asetukset_.value("laajuus").toInt() >= velho->asetukset_.value("alvlaajuus").toInt()) {
+        if( voiLuodaVatKirjanpidon || !field("pilveen").toBool() ) {
+            // AlvVelvollinen vain jos riittävä tilaus
+            velho->asetukset_.insert("AlvVelvollinen","ON");
+        } else {
+            qWarning() << "Tilaus ei oikeuta arvonlisäverovelvollista kirjanpitoa";
+        }
+    }
+
+    if( IbanValidator::kelpaako(ui->tiliLine->text())) {
+        Iban iban( ui->tiliLine->text());
+        for(int i=0; i < velho->tilit_.count(); i++) {
+            if( velho->tilit_.at(i).toMap().value("tyyppi") == "ARP") {
+                QVariantMap map = velho->tilit_.at(i).toMap();                
+                map.insert("iban", iban.valeitta());
+                map.insert( "bic", ui->bicEdit->text());
+                map.insert( "pankki", ui->pankkiEdit->text());
+                velho->tilit_[i] = map;
+                break;
+            }
+        }
+        velho->asetukset_.insert("LaskuIbanit", iban.valeitta());
+    }
+
+    return true;
+
+}
+
+void TiedotSivu::haeytunnarilla()
+{
+    if( ui->ytunnusEdit->hasAcceptableInput() ) {
+        QNetworkRequest request( QUrl("https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId="+ ui->ytunnusEdit->text()));
+        QNetworkReply *reply = kp()->networkManager()->get(request);
+        connect( reply, &QNetworkReply::finished, this, &TiedotSivu::yTietoSaapuu);
+    }
+}
+
+void TiedotSivu::yTietoSaapuu()
+{
+    QNetworkReply *reply = qobject_cast<QNetworkReply*>( sender());
+    QVariant var = QJsonDocument::fromJson( reply->readAll() ).toVariant();
+    if( var.toMap().value("companies").toList().isEmpty())
+        return;
+
+    QVariantMap tieto = var.toMap().value("companies").toList().value(0).toMap();
+
+    QVariantList nimiLista = tieto.value("names").toList();
+    for(const QVariant& nimiVar : std::as_const(nimiLista)) {
+        const QVariantMap& nimiMap = nimiVar.toMap();
+        if(!nimiMap.contains("endDate")) {
+            ui->nimiEdit->setText( nimiMap.value("name").toString() );
+        }
+    }
+
+    QVariantList osoitteet = tieto.value("addresses").toList();
+    for(const auto& item : std::as_const( osoitteet )) {
+        QVariantMap osoite = item.toMap();
+        if( osoite.value("type").toInt() == 1 )
+            continue;
+        if( osoite.value("postOfficeBox").toString().length() > 0)
+            ui->osoiteEdit->setPlainText("PL " + osoite.value("postOfficeBox").toString());
+        else {
+            const QString addr =
+                ( osoite.value("co").toString().length() > 0 ? osoite.value("co").toString() + "\n" : "") +
+                osoite.value("street").toString() + " " +
+                osoite.value("buildingNumber").toString() + " " +
+                osoite.value("entrance").toString() + " " +
+                osoite.value("apartmentNumber").toString() +
+                osoite.value("apartmentIdSuffix").toString();
+            ui->osoiteEdit->setPlainText(addr);
+        }
+
+        ui->postinumeroEdit->setText( osoite.value("postCode").toString() );
+
+        const auto& postOfficeList = osoite.value("postOffices").toList();
+        for(const auto& officeItem : std::as_const(postOfficeList)  ) {
+            const auto& officeMap = officeItem.toMap();
+            if( officeMap.value("languageCode").toString() == "1")
+                ui->kaupunkiEdit->setText(officeMap.value("city").toString());
+        }
+        break;
+    }
+
+    ui->webEdit->setText( tieto.value("website").toMap().value("url").toString() );
+
+    QString muoto;
+    const auto& muotoList = tieto.value("companyForms").toList();
+    for(const auto& mItem : std::as_const(muotoList)) {
+        const auto& mMap = mItem.toMap();
+        if( mMap.contains("endDate")) continue;
+        const QString& mCode = mMap.value("type").toString();
+        if( mCode == "16") muoto = "oy";
+        else if(mCode == "14") muoto = "osk";
+        else if(mCode == "2") muoto = "asoy";
+        else if(mCode == "5") muoto = "ay";
+        else if(mCode == "13") muoto = "ky";
+
+        for(int i=0; i < ui->muotoList->count(); i++) {
+            if( ui->muotoList->item(i)->data(Qt::UserRole).toString() == muoto) {
+                ui->muotoList->setCurrentRow(i);
+            }
+        }
+
+        break;
+    }
+
+
+}
+
+void TiedotSivu::haeToimipaikka()
+{
+    QString toimipaikka = Postinumerot::toimipaikka( ui->postinumeroEdit->text() );
+    if( !toimipaikka.isEmpty() )
+        ui->kaupunkiEdit->setText(toimipaikka);
+}
+
+void TiedotSivu::haeBic()
+{
+    Iban iban( ui->tiliLine->text());
+
+    if( iban.isValid() && !iban.bic().isEmpty()) {
+        ui->bicEdit->setText( iban.bic());
+        ui->pankkiEdit->setText( iban.pankki());
+    }
+
+    const bool naytaBic = iban.isValid() && iban.bic().isEmpty();
+
+    ui->bicLabel->setVisible( naytaBic );
+    ui->bicEdit->setVisible( naytaBic );
+    ui->pankkiLabel->setVisible( naytaBic );
+    ui->pankkiEdit->setVisible( naytaBic );
+
+}

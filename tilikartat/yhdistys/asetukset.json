@@ -1,0 +1,257 @@
+{
+  "kielet": {
+    "fi": {
+      "fi": "suomi",
+      "sv": "finska",
+      "en": "Finnish",
+      "zh": "芬兰语"
+    },
+    "sv": {
+      "fi": "ruotsi",
+      "sv": "svenska",
+      "en": "Swedish",
+      "zh": "瑞典语"
+    },
+    "en": {
+      "fi": "englanti",
+      "sv": "engelska",
+      "en": "English",
+      "zh": "英语"
+    },
+    "zh": {
+      "fi": "kiina",
+      "sv": "kinesiska",
+      "en": "Chinese",
+      "zh": "中文"
+    }
+  },
+  "kieli": "fi",
+  "tpkieli": "fi",
+  "muodot": {
+    "ry": {
+      "fi": "Yhdistys",
+      "sv": "Förening",
+      "en": "Association",
+      "zh": "协会"
+    }
+  },
+  "laajuudet": {
+    "1": {
+      "fi": "Suppea",
+      "sv": "Kort",
+      "en": "Limited",
+      "zh": "有限公司"
+    },
+    "2": {
+      "fi": "Tavallinen, ei palkkoja",
+      "sv": "Normal, utan löner",
+      "en": "Normal, without salaries",
+      "zh": "正常，不含工资"
+    },
+    "3": {
+      "fi": "Tavallinen, palkat",
+      "sv": "Normal, med löner",
+      "en": "Normal, with salaries",
+      "zh": "正常，含工资"
+    },
+    "4": {
+      "fi": "Laaja, kiinteää tai sijoitusomaisuutta",
+      "sv": "Omfattande",
+      "en": "Extensive, fixed or investment assets",
+      "zh": "广泛，含固定或投资资产"
+    },
+    "5": {
+      "fi": "Elinkeinotoimintaa",
+      "sv": "Omfattande, med näringsverksamhet",
+      "en": "Business activities",
+      "zh": "包含经营业务"
+    },
+    "6": {
+      "fi": "Kaikki tilit, myös konserni",
+      "sv": "Alla konton, även koncernkonton",
+      "en": "All accounts, including group",
+      "zh": "所有科目，含集团"
+    }
+  },
+  "laajuus": "3",
+  "alvlaajuus": "5",
+  "tositesarjat": {
+    "0": "X",
+    "100": "OL",
+    "110": "OL",
+    "120": "KL",
+    "200": "ML",
+    "210": "ML",
+    "214": "ML",
+    "216": "ML",
+    "300": "X",
+    "400": "T",
+    "500": "P",
+    "700": "MT",
+    "800": "LT",
+    "*": "JT",
+    "K": "K"
+  },
+  "palkkatilit": {
+    "EP": 2986,
+    "SB": 2986,
+    "AY": 2988,
+    "KM": 4741,
+    "PR": 4751,
+    "AT": 4761,
+    "PA": 5000,
+    "LK": 5002,
+    "PI": 5003,
+    "LS": 5004,
+    "LU": 5005,
+    "LV": 5040,
+    "EL": 5100,
+    "SV": 5120,
+    "TV": 5122,
+    "UO": 2989
+  },
+  "maksutavat+": [
+    {
+      "fi": "Lasku",
+      "sv": "Faktura",
+      "en": "Invoice",
+      "zh": "发票",
+      "TILI": 1700,
+      "KUVA": "lasku",
+      "ERA": -1
+    },
+    {
+      "fi": "Käteinen",
+      "sv": "Kontant",
+      "en": "Cash",
+      "zh": "现金",
+      "TILI": 1900,
+      "KUVA": "kateinen"
+    },
+    {
+      "fi": "Pankkitili",
+      "sv": "Bankkonto",
+      "en": "Bank account",
+      "zh": "银行账户",
+      "TILI": 1910,
+      "KUVA": "pankki"
+    },
+    {
+      "fi": "Korttimaksu",
+      "sv": "Kreditkort",
+      "en": "Card payment",
+      "zh": "刷卡支付",
+      "TILI": 1704,
+      "KUVA": "luottokortti"
+    },
+    {
+      "fi": "Hyvityslasku",
+      "sv": "Kreditnota",
+      "en": "Credit note",
+      "zh": "红字发票/贷项通知单",
+      "TILI": 1700,
+      "KUVA": "poista"
+    },
+    {
+      "fi": "Siirtosaaminen",
+      "sv": "Resultatreglering",
+      "en": "Accrued income",
+      "zh": "应计收入",
+      "TILI": 1770,
+      "KUVA": "siirra",
+      "ERA": -1
+    }
+  ],
+  "maksutavat-": [
+    {
+      "fi": "Lasku",
+      "sv": "Faktura",
+      "en": "Invoice",
+      "zh": "发票",
+      "TILI": 2960,
+      "KUVA": "lasku",
+      "ERA": -1
+    },
+    {
+      "fi": "Käteinen",
+      "sv": "Kontant",
+      "en": "Cash",
+      "zh": "现金",
+      "TILI": 1900,
+      "KUVA": "kateinen"
+    },
+    {
+      "fi": "Pankkitili",
+      "sv": "Bankkonto",
+      "en": "Bank account",
+      "zh": "银行账户",
+      "TILI": 1910,
+      "KUVA": "pankki"
+    },
+    {
+      "fi": "Pankkikortti",
+      "sv": "Bankkort",
+      "en": "Debit card",
+      "zh": "借记卡",
+      "TILI": 2964,
+      "KUVA": "pankkikortti"
+    },
+    {
+      "fi": "Luottokortti",
+      "sv": "Kreditkort",
+      "en": "Credit card",
+      "zh": "信用卡",
+      "TILI": 2963,
+      "KUVA": "luottokortti"
+    },
+    {
+      "fi": "Hyvityslasku",
+      "sv": "Kreditnota",
+      "en": "Credit note",
+      "zh": "红字发票/贷项通知单",
+      "TILI": 2960,
+      "KUVA": "poista"
+    },
+    {
+      "fi": "Siirtovelka",
+      "sv": "Resultatreglering",
+      "en": "Accrued expense",
+      "zh": "应计费用",
+      "TILI": 2990,
+      "KUVA": "siirra",
+      "ERA": -1
+    }
+  ],
+  "tilinpaatosvalinnat": "toiminnantarkastus",
+  "arkistoraportit": "tase/yleinen,tulos/yleinen",
+  "Laskuteksti/Saate": {
+    "en": "The attachment contains an invoice for your order.\nPlease pay the invoice no later than the due date.\n\nYou can use the virtual barcode {{virtuaali}} to pay\nInvoice sum {{summa}}\nReference number {{viite}}\nOur account number {{iban}}",
+    "fi": "Liitteessä on lasku tilauksestasi.\nMaksathan laskun viimeistään eräpäivänä.\n\nVoit käyttää maksamiseen virtuaaliviivakoodia {{virtuaali}}\nLaskun summa {{summa}}\nViitenumero {{viite}}\nTilinumeromme {{iban}}",
+    "sv": "Bilagan innehåller en faktura för din beställning.\nBetala fakturan senast på förfallodagen.\n\nDu kan använda den virtuella streckkoden {{virtuaali}} för att betala\nFakturasum {{summa}}\nReferensnummer {{viite}}\nVårt kontonummer {{iban}}",
+    "zh": "附件中包含您的订单发票。\n请您务必在到期日前付款。\n\n您可以使用虚拟条码 {{virtuaali}} 支付。\n发票金额 {{summa}}\n参考号 {{viite}}\n我方银行账号 {{iban}}"
+  },
+  "Laskuteksti/Saate_otsikko": {
+    "en": "Your invoice",
+    "fi": "Lasku {{numero}}, {{yritys}}",
+    "sv": "Din faktura",
+    "zh": "您的发票 {{numero}}, {{yritys}}"
+  },
+  "Laskuteksti/Maksumuistutuslisatiedot": {
+    "fi": "Kirjanpitomme mukaan emme ole saaneet maksusuoritustanne. Pyydämme maksuanne alla olevan erittelyn mukaisesti. Mikäli olette jo maksaneet laskun tai lasku on virheellinen, ottakaa yhteyttä asian selvittämiseksi.",
+    "sv": "Enligt våra noteringar är ovanstående fakturor obetalda. Vi ber er betala dem omgående. Om ni har betalt eller om faktura är felig, var vänlig och kontakta oss.",
+    "en": "According to our records, we have not yet received a remittance for above invoice. If you have already sent your payment or there is a mistake in this invoice, please contact us.",
+    "zh": "根据我们的记录，以上发票尚未收到付款。请您尽快付款。如您已付款或发票有误，请与我们联系。"
+  },
+  "Laskuteksti/Maksumuistutussaate": {
+    "en": "According to our records, we have not received your payment. We request your payment in accordance with the attached payment reminder. If you have already paid the invoice or the invoice is incorrect, please contact us to clarify the matter.",
+    "fi": "Kirjanpitomme mukaan emme ole saaneet maksusuoritustanne. Pyydämme maksuanne liitteenä olevan maksumuistutuksen mukaisesti. Mikäli olette jo maksaneet laskun tai lasku on virheellinen, ottakaa yhteyttä asian selvittämiseksi。",
+    "sv": "Enligt våra uppgifter, vi har inte fått din betalning. Vi begär din betalning i enlighet med bifogad betalningspåminnelse. Om du redan har betalat fakturan eller fakturan är felaktig, vänligen kontakta oss för att klargöra ärendet。",
+    "zh": "根据我们的记录，我们尚未收到您的付款。请您按照附件中的付款提醒进行付款。如您已付款或发票有误，请及时与我们联系。"
+  },
+  "Laskuteksti/Maksumuistutussaate_otsikko": {
+    "en": "Payment reminder",
+    "fi": "Maksumuistutus",
+    "sv": "Betalningspåminnelse",
+    "zh": "付款提醒"
+  }
+}

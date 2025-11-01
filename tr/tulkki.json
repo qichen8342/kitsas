@@ -1,0 +1,1802 @@
+{
+    "suomi": {
+        "sv": "finska",
+        "en": "Finnish",
+        "zh": "芬兰语"
+    },
+    "ruotsi": {
+        "sv": "svenska",
+        "en": "Swedish",
+        "zh": "瑞典语"
+    },
+    "englanti": {
+        "sv": "engelska",
+        "en": "English",
+        "zh": "英语"
+    },
+    "Kotipaikka": {
+        "sv": "Hemort",
+        "en": "Domicile",
+        "zh": "法定所在地"
+    },
+    "HARJOITUS": {
+        "sv": "ÖVNING",
+        "en": "TRIAL",
+        "zh": "练习/测试"
+    },
+    "PÄIVÄKIRJA": {
+        "sv": "DAGBOK",
+        "en": "JOURNAL",
+        "zh": "日记账"
+    },
+    "Päiväkirja": {
+        "sv": "Dagbok",
+        "en": "Journal",
+        "zh": "日记账"
+    },
+    "Pvm": {
+        "sv": "Datum",
+        "en": "Date",
+        "zh": "日期"
+    },
+    "Tosite": {
+        "sv": "Verif.",
+        "en": "Vouch.",
+        "zh": "凭证"
+    },
+    "Tili": {
+        "sv": "Konto",
+        "en": "Account",
+        "zh": "科目"
+    },
+    "tili_puuttuu": {
+        "fi": "(Ei tiliöity)",
+        "sv": "(Inte redovisas)",
+        "en": "(Not accounted)",
+        "zh": "科目"
+    },
+    "Kohdennus": {
+        "sv": "Hänförs till",
+        "en": "Allocation",
+        "zh": "归集/分配"
+    },
+    "Yhteensä": {
+        "sv": "Totalt",
+        "en": "Total",
+        "zh": "合计"
+    },
+    "Selite": {
+        "sv": "Beskrivning",
+        "en": "Description",
+        "zh": "摘要"
+    },
+    "Sivu %1": {
+        "sv": "Sidan %1",
+        "en": "Page %1",
+        "zh": "第 %1 页"
+    },
+    "Kredit €": {
+        "en": "Credit €",
+        "zh": "贷方 €"
+    },
+    "Saldo €": {
+        "en": "Balance €",
+        "zh": "余额 €"
+    },
+    "PÄÄKIRJA": {
+        "sv": "HUVUDBOK",
+        "en": "GENERAL LEDGER",
+        "zh": "总账"
+    },
+    "Pääkirja": {
+        "sv": "Huvudbok",
+        "en": "General ledger",
+        "zh": "总账"
+    },
+    "PÄÄKIRJAN OTE": {
+        "sv": "HUVUDBOKUTDRAG",
+        "en": "EXTRACT FROM GENERAL LEDGER",
+        "zh": "总账摘录"
+    },
+    "Budjetti": {
+        "sv": "Budget",
+        "en": "Budget",
+        "zh": "预算"
+    },
+    "Toteutunut": {
+        "sv": "Förverkligad",
+        "en": "Actualised",
+        "zh": "实际"
+    },
+    "Budjettiero €": {
+        "sv": "Budgetskillnad €",
+        "en": "Difference €",
+        "zh": "预算差额 €"
+    },
+    "Toteutunut %": {
+        "sv": "Förverkligad %",
+        "en": "Realized %",
+        "zh": "完成率 %"
+    },
+    "Kustannuspaikat": {
+        "sv": "Konstnadsställen",
+        "en": "Cost pools",
+        "zh": "成本中心"
+    },
+    "Projektit": {
+        "sv": "Projekt",
+        "en": "Projects",
+        "zh": "项目"
+    },
+    "Asiakas/Toimittaja": {
+        "sv": "Kund/Leverantör",
+        "en": "Customer/Supplier",
+        "zh": "客户/供应商"
+    },
+    "TOSITELUETTELO": {
+        "sv": "VERIFIKATLISTA",
+        "en": "VOUCHER LIST",
+        "zh": "凭证目录"
+    },
+    "Tositeluettelo": {
+        "sv": "Verifikatlista",
+        "en": "Voucher list",
+        "zh": "凭证目录"
+    },
+    "Otsikko": {
+        "sv": "Rubrik",
+        "en": "Heading",
+        "zh": "标题"
+    },
+    "Liitteitä": {
+        "sv": "Bilagor",
+        "en": "Attachm.",
+        "zh": "附件数"
+    },
+    "Summa €": {
+        "sv": "Totalt €",
+        "en": "Total €",
+        "zh": "金额 €"
+    },
+    "Tilin numero": {
+        "sv": "Kontonummer",
+        "en": "Account number",
+        "zh": "科目编号"
+    },
+    "Tilin nimi": {
+        "sv": "Kontonamn",
+        "en": "Account name",
+        "zh": "科目名称"
+    },
+    "TILILUETTELO": {
+        "sv": "KONTOPLAN",
+        "en": "SPECIFICATION OF ACCOUNTS",
+        "zh": "科目表"
+    },
+    "Tililuettelo": {
+        "sv": "Kontoplan",
+        "en": "Specification of accounts",
+        "zh": "科目表"
+    },
+    "Tilin tyyppi": {
+        "sv": "Kontotyp",
+        "en": "Type",
+        "zh": "科目类别"
+    },
+    "Saldo %1": {
+        "en": "Balance %1",
+        "zh": "余额 %1"
+    },
+    "Kirjausohjeet": {
+        "sv": "Instructoner",
+        "en": "Instructions",
+        "zh": "记账说明"
+    },
+    "Meno": {
+        "sv": "Utgift",
+        "en": "Outcome",
+        "zh": "支出"
+    },
+    "Tulo": {
+        "sv": "Intäkt",
+        "en": "Income",
+        "zh": "收入"
+    },
+    "Kululasku": {
+        "sv": "Kostnadsräkning",
+        "en": "Bill of costs",
+        "zh": "费用单"
+    },
+    "Saapunut verkkolasku": {
+        "sv": "Inkomst nätfaktura",
+        "en": "Incoming online invoice",
+        "zh": "收到的电子发票"
+    },
+    "Myyntilasku": {
+        "sv": "Fölsäljningsfaktura",
+        "en": "Sales invoice",
+        "zh": "销售发票"
+    },
+    "Hyvityslasku": {
+        "sv": "Kreditnota",
+        "en": "Credit note",
+        "zh": "贷项通知单"
+    },
+    "Maksumuistutus": {
+        "sv": "Betalningspåminnelse",
+        "en": "Payment reminder",
+        "zh": "付款提醒"
+    },
+    "Siirto": {
+        "sv": "Överföring",
+        "en": "Transfer",
+        "zh": "转账/结转"
+    },
+    "Tiliote": {
+        "sv": "Kontoutdrag",
+        "en": "Bank statement",
+        "zh": "银行对账单"
+    },
+    "Palkka": {
+        "sv": "Lön",
+        "en": "Salary",
+        "zh": "工资"
+    },
+    "Muistio": {
+        "sv": "Memorial",
+        "en": "Memo",
+        "zh": "记忆凭证"
+    },
+    "Liitetieto": {
+        "sv": "Not",
+        "en": "Attachment",
+        "zh": "附注"
+    },
+    "Tuonti": {
+        "sv": "Import",
+        "en": "Import",
+        "zh": "导入"
+    },
+    "Muu": {
+        "sv": "Annan",
+        "en": "Other",
+        "zh": "其他"
+    },
+    "Tilinavaus": {
+        "sv": "Öppnande av konto",
+        "en": "Opening of an account",
+        "zh": "期初建账"
+    },
+    "Alv-laskelma": {
+        "sv": "Moms-beräkning",
+        "en": "VAT calculation",
+        "zh": "增值税计算"
+    },
+    "Poistolaskelma": {
+        "sv": "Avskrivningsberäkning",
+        "en": "Depreciation allowance calculation",
+        "zh": "折旧计算"
+    },
+    "Jaksotus": {
+        "sv": "Periodindelning",
+        "en": "Periodization",
+        "zh": "期间费用/收入摊销"
+    },
+    "Tulovero": {
+        "sv": "Inkomstskatt",
+        "en": "Income tax",
+        "zh": "所得税"
+    },
+    "TASE-ERITTELY": {
+        "sv": "SPECIFICATION TILL BALANSRÄKNINGEN",
+        "en": "BALANCE SHEET BREAKDOWN",
+        "zh": "资产负债表明细"
+    },
+    "Tase-erittely": {
+        "sv": "Specification till balansräkningen",
+        "en": "Balance sheet breakdown",
+        "zh": "资产负债表明细"
+    },
+    "VASTAAVAA": {
+        "sv": "AKTIVA",
+        "en": "ASSETS",
+        "zh": "资产"
+    },
+    "VASTATTAVAA": {
+        "sv": "PASSIVA",
+        "en": "LIABILITIES",
+        "zh": "负债及所有者权益"
+    },
+    "VASTAAVAA YHTEENSÄ": {
+        "sv": "AKTIVA TOTALT",
+        "en": "ASSETS TOTAL",
+        "zh": "资产合计"
+    },
+    "VASTATTAVAA YHTEENSÄ": {
+        "sv": "PASSIVA TOTALT",
+        "en": "LIABILITIES TOTAL",
+        "zh": "负债和所有者权益合计"
+    },
+    "Lisäykset/vähennykset %1 saakka": {
+        "sv": "Ökningar/avdrag upp till %1",
+        "en": "Additions/reductions until %1",
+        "zh": "截至 %1 的增减变动"
+    },
+    "Jäljellä %1": {
+        "sv": "Återstående %1",
+        "en": "Remaining %1",
+        "zh": "剩余 %1"
+    },
+    "Loppusaldo %1": {
+        "sv": "Utgående saldo %1",
+        "en": "Ending balance %1",
+        "zh": "期末余额 %1"
+    },
+    "Alkusaldo %1": {
+        "sv": "Ingående saldo %1",
+        "en": "Beginning balance",
+        "zh": "期初余额 %1"
+    },
+    "Erittelemättömät": {
+        "sv": "Ospecificerade",
+        "en": "Unspecified",
+        "zh": "未分类"
+    },
+    "Tilin %1 loppusaldo": {
+        "sv": "Utgående saldo på kontot %1",
+        "en": "End balance of account %1",
+        "zh": "科目 %1 期末余额"
+    },
+    "AVOIMET MYYNTILASKUT": {
+        "sv": "ÖPPNA KUNDFAKTUROR",
+        "en": "OPEN SALES INVOICES",
+        "zh": "未结销项发票"
+    },
+    "Avoimet myyntilaskut": {
+        "sv": "Öppna kundfakturor",
+        "en": "Open sales invoices",
+        "zh": "未结销项发票"
+    },
+    "MYYNTILASKUT": {
+        "sv": "KUNDFAKTUROR",
+        "en": "SALES INVOICES",
+        "zh": "销项发票"
+    },
+    "AVOIMET OSTOLASKUT": {
+        "sv": "ÖPPNA INKÖPSFAKTUROR",
+        "en": "OPEN PURCHASE INVOICES",
+        "zh": "未结进项发票"
+    },
+    "Avoimet ostolaskut": {
+        "sv": "Öppna inköpsfakturor",
+        "en": "Open purchase invoices",
+        "zh": "未结进项发票"
+    },
+    "OSTOLASKUT": {
+        "sv": "INKÖPSFAKTUROR",
+        "en": "PURCHASE INVOICES",
+        "zh": "进项发票"
+    },
+    "Numero": {
+        "sv": "Nummer",
+        "en": "Number",
+        "zh": "编号"
+    },
+    "Laskupvm": {
+        "sv": "Fakturadag",
+        "en": "Invoice date",
+        "zh": "发票日期"
+    },
+    "Eräpvm": {
+        "sv": "Förfallogdag",
+        "en": "Due date",
+        "zh": "到期日"
+    },
+    "Maksamatta": {
+        "sv": "Obetald",
+        "en": "Unpaid",
+        "zh": "未付款"
+    },
+    "Päivämäärä": {
+        "sv": "Datum",
+        "en": "Date",
+        "zh": "日期"
+    },
+    "Asiakas": {
+        "sv": "Kund",
+        "en": "Customer",
+        "zh": "客户"
+    },
+    "Toimittaja": {
+        "sv": "Leverantör",
+        "en": "Supplier",
+        "zh": "供应商"
+    },
+    "Viite": {
+        "sv": "Referens",
+        "en": "Reference",
+        "zh": "参考号"
+    },
+    "Tuote": {
+        "sv": "Produkt",
+        "en": "Product",
+        "zh": "商品/服务"
+    },
+    "myynti kpl": {
+        "sv": "försäljning st",
+        "en": "sales pcs",
+        "zh": "销售数量（件）"
+    },
+    "keskim. á netto": {
+        "sv": "genomsn á netto",
+        "en": "average á net",
+        "zh": "平均不含税单价"
+    },
+    "keskim. á brutto": {
+        "sv": "genomsn á brutto",
+        "en": "average á gross",
+        "zh": "平均含税单价"
+    },
+    "netto yht": {
+        "sv": "totalt netto",
+        "en": "total net",
+        "zh": "不含税合计"
+    },
+    "brutto yht": {
+        "sv": "totalt brutto",
+        "en": "totalt gross",
+        "zh": "含税合计"
+    },
+    "MYYNTI": {
+        "sv": "FÖRSÄLJNING",
+        "en": "SALES",
+        "zh": "销售"
+    },
+    "Muu myynti": {
+        "sv": "Annan försäljing",
+        "en": "Other sales",
+        "zh": "其他销售"
+    },
+    "ARVONLISÄVEROLASKELMA": {
+        "sv": "MOMSBERÄKNING",
+        "en": "VAT CALCULATION",
+        "zh": "增值税计算"
+    },
+    "Arvonlisäveroilmoituksen tiedot": {
+        "sv": "Information om momsdeklaration",
+        "zh": "增值税申报信息"
+    },
+    "Maksuperusteinen arvonlisävero": {
+        "sv": "Uppskjuten moms",
+        "zh": "收付实现制增值税"
+    },
+    "Suoritettava %1%:n vero kotimaan myynnistä": {
+        "sv": "Skatt på inhemsk försäljning enligt skattesatserna moms %1 %",
+        "zh": "国内销售应纳 %1% 税额"
+    },
+    "Vero tavaroiden maahantuonnista EU:n ulkopuolelta": {
+        "sv": "Moms på varuinköp från områden utanför EU",
+        "zh": "自欧盟以外进口货物增值税"
+    },
+    "Vero tavaraostoista muista EU-maista": {
+        "sv": "Moms på varuinköp från andra EU-länder",
+        "zh": "自欧盟其他成员国购货增值税"
+    },
+    "Vero palveluostoista muista EU-maista": {
+        "sv": "Moms på inköp av tjänster från andra EU-länder",
+        "zh": "自欧盟其他成员国购置劳务增值税"
+    },
+    "Verokauden vähennettävä vero": {
+        "sv": "Moms som ska dras av för skatteperiod",
+        "zh": "本期可抵扣税额"
+    },
+    "Maksettava vero / Palautukseen oikeuttava vero": {
+        "sv": "Moms att betala / Moms som berättingar till återbäring",
+        "zh": "应纳（退）税额"
+    },
+    "0-verokannan alainen liikevaihto": {
+        "sv": "Omsättning enligt 0-skattesats",
+        "zh": "零税率销售额"
+    },
+    "Tavaroiden maahantuonnit EU:n ulkopuolelta": {
+        "sv": "Import av varor från områden utanför EU",
+        "zh": "自欧盟以外进口货物"
+    },
+    "Palveluostot EU:n ulkopuolelta ": {
+        "sv": "Inköp av tjänster från områden untanför EU",
+        "zh": "自欧盟以外购置劳务"
+    },
+    "Tavaroiden myynnit muihin EU-maihin": {
+        "sv": "Varuförsäljningar till andra EU-länder",
+        "zh": "向欧盟他国销售货物"
+    },
+    "Palveluiden myynnit muihin EU-maihin": {
+        "sv": "Försäljning av tjänster till andra EU-länder",
+        "zh": "向欧盟他国销售劳务"
+    },
+    "Tavaraostot muista EU-maista": {
+        "sv": "Varuinköp från andra EU-länder",
+        "zh": "自欧盟他国购货"
+    },
+    "Palveluostot muista EU-maista": {
+        "sv": "Inköp av tjänster från andra EU-länder",
+        "zh": "自欧盟他国购置劳务"
+    },
+    "Rakentamispalveluiden ja metalliromun myynnit": {
+        "sv": "Försäljningar av byggtjänster och metallskrot",
+        "zh": "建筑服务与金属废料销售"
+    },
+    "Rakentamispalveluiden ja metalliromun ostot": {
+        "sv": "Inköp av byggtjänster och metallskrot",
+        "zh": "建筑服务与金属废料采购"
+    },
+    "Alarajahuojennukseen oikeuttava liikevaihto": {
+        "sv": "Omsättning som berättigar till lättnad vid den nedre gränsen",
+        "zh": "享受起征点减免的销售额"
+    },
+    "Alarajahuojennukseen oikeuttava vero": {
+        "sv": "Skatt som berättigar till lättnad vid den nedre gränsen",
+        "zh": "享受起征点减免的税额"
+    },
+    "Alarajahuojennuksen määrä": {
+        "sv": "Beloppet av lättnad vid den nedre gränsen",
+        "zh": "起征点减免金额"
+    },
+    "Ei oikeutta alarajahuojennukseen": {
+        "sv": "Ingen rätt till lättnad vid den nedre gränsen",
+        "zh": "不享受起征点减免"
+    },
+    "Arvonlisävero %1 - %2": {
+        "sv": "Medvärdesskatt %1 - %2",
+        "zh": "增值税 %1 - %2"
+    },
+    "Tilinpäätös": {
+        "sv": "Bokslut",
+        "zh": "财务报表"
+    },
+    "Y-tunnus": {
+        "sv": "FO-nummer",
+        "zh": "企业编号（Y-tunnus）"
+    },
+    "Kirjanpitoaineisto": {
+        "sv": "Bokföringsmaterial",
+        "zh": "会计资料"
+    },
+    "Veroton": {
+        "sv": "Skattefri",
+        "zh": "免税"
+    },
+    "Verollinen myynti (netto)": {
+        "sv": "Skattebelagd försäljning (netto)",
+        "zh": "含税销售（不含税额）"
+    },
+    "Verollinen osto (netto)": {
+        "sv": "Skattebelagd inköp (netto)",
+        "zh": "含税采购（不含税额）"
+    },
+    "Verollinen myynti (maksuperusteinen alv)": {
+        "sv": "Skattebelagd försäljning (avgiftsbestämd moms)",
+        "zh": "含税销售（收付实现制）"
+    },
+    "Verollinen osto (maksuperusteinen alv)": {
+        "sv": "Skattebelagd inköp (avgiftsbestämd moms)",
+        "zh": "含税采购（收付实现制）"
+    },
+    "Ennakkolasku (myynti)": {
+        "sv": "Förhandsfaktura (försäljning)",
+        "zh": "预付款发票（销售）"
+    },
+    "Verollinen myynti (brutto)": {
+        "sv": "Skattebelagd försäljning (brutto)",
+        "zh": "含税销售（含税额）"
+    },
+    "Verollinen osto (brutto)": {
+        "sv": "Skattebelagd inköp (brutto)",
+        "zh": "含税采购（含税额）"
+    },
+    "Nollaverokannan alainen myynti": {
+        "sv": "Noll skattesats försäljning",
+        "zh": "零税率销售"
+    },
+    "Voittomarginaalijärjestelmä, myynti": {
+        "sv": "Vinstmarginalsystem, försäljning",
+        "zh": "利润率制度（销售）"
+    },
+    "Voittomarginaalijärjestelmä, osto": {
+        "sv": "Vinstmarginalsystem, inköp",
+        "zh": "利润率制度（采购）"
+    },
+    "Tavaroiden yhteisömyynti": {
+        "sv": "Varuförsäljningar till andra EU-länder",
+        "zh": "欧盟区内货物销售"
+    },
+    "Palveluiden yhteisömyynti": {
+        "sv": "Försäljning av tjänster till andra EU-länder",
+        "zh": "欧盟区内劳务销售"
+    },
+    "Tavaroiden yhteisöhankinnat": {
+        "sv": "Varuinköp från andra EU-länder",
+        "zh": "欧盟区内货物购置"
+    },
+    "Palveluiden yhteisöhankinnat": {
+        "sv": "Inköp av tjänster från andra EU-länder",
+        "zh": "欧盟区内劳务购置"
+    },
+    "Tavaroiden maahantuonti EU:n ulkopuolelta": {
+        "sv": "Import av varor från områden utanför EU",
+        "zh": "自欧盟以外进口货物"
+    },
+    "Tavaroiden maahantuonti, veron kirjaus": {
+        "sv": "Import av varor, inskriftning av skatt",
+        "zh": "进口货物税额记录"
+    },
+    "Rakennuspalveluiden myynti": {
+        "sv": "Försäljningar av byggtjänster ",
+        "zh": "建筑服务销售"
+    },
+    "Rakentamispalveluiden osto": {
+        "sv": "Inköp av byggtjänster",
+        "zh": "建筑服务采购"
+    },
+    "Maksettavan arvonlisäveron tilitys": {
+        "sv": "Utförande av merdvärdesskatt",
+        "zh": "应付增值税结转"
+    },
+    "Tekninen kirjaus": {
+        "sv": "Teknisk bokföring",
+        "zh": "技术性记账"
+    },
+    "Vähennyskelvottoman oston veron osuus": {
+        "sv": "Andel av skatten på icke avdragsgilla köp ",
+        "zh": "不可抵扣进项税额"
+    },
+    "VERON MÄÄRÄ %1": {
+        "sv": "BELOPPET AV SKATTEN %1",
+        "zh": "税额 %1"
+    },
+    "VÄHENNYKSEN MÄÄRÄ %1": {
+        "sv": "BELOPPET AV AVDRAG %1",
+        "zh": "抵扣额 %1"
+    },
+    "KOHDENTAMATON MAKSUPERUSTEINEN %1": {
+        "sv": "OFÖRDELADE AVGIFTSBESTÄMD MOMS %1",
+        "zh": "未归集的收付实现制 %1"
+    },
+    "Erittely": {
+        "sv": "Specification",
+        "zh": "明细"
+    },
+    "Aiempi alijäämä": {
+        "sv": "Tidagare underskott",
+        "zh": "以前结转的赤字"
+    },
+    "Marginaali": {
+        "sv": "Marginal",
+        "zh": "毛利/差额"
+    },
+    "Alijäämä": {
+        "sv": "Underskott",
+        "zh": "赤字"
+    },
+    "Vero": {
+        "sv": "Skatt",
+        "en": "Tax",
+        "zh": "税金"
+    },
+    "TILINPÄÄTÖSJAKSOTUKSET": {
+        "sv": "PERIODINDELNINGAR",
+        "zh": "期末结转/摊销"
+    },
+    "Jaksotukset yhteensä": {
+        "sv": "Periodindelningar totalt",
+        "zh": "摊销合计"
+    },
+    "Verosaamiseksi kirjattava negatiivinen verovelka": {
+        "sv": "Negativ skatteskuld som ska bokföras som skattefordran",
+        "zh": "记作递延所得税资产的负债"
+    },
+    "Tilinavauksen jaksotuskirjaukset": {
+        "sv": "Periodiska poster i kontot öppnande",
+        "zh": "期初摊销分录"
+    },
+    "Tilinpäätösjaksotukset": {
+        "sv": "Periodiska poster i bokslutet",
+        "zh": "期末摊销分录"
+    },
+    "Suunnitelman mukaiset poistot %1": {
+        "sv": "Avskrivningar enligt plan",
+        "zh": "按计划计提折旧 %1"
+    },
+    "Tasaeräpoisto %1": {
+        "sv": "Avskrivning med jämna rater %1",
+        "zh": "直线折旧 %1"
+    },
+    "Menojäännöspoisto %1": {
+        "sv": "Restvärdesavskrivning %1",
+        "zh": "余额递减折旧 %1"
+    },
+    "Tili/Pvm": {
+        "sv": "Konto/Datum",
+        "zh": "科目/日期"
+    },
+    "Nimike/Kohdennus": {
+        "sv": "Position/Konstnandsställe",
+        "zh": "项目/成本中心"
+    },
+    "Saldo ennen": {
+        "sv": "Saldo före",
+        "zh": "调整前余额"
+    },
+    "Sääntö": {
+        "sv": "Regel",
+        "zh": "规则"
+    },
+    "Poisto": {
+        "sv": "Avskrivning",
+        "zh": "折旧"
+    },
+    "Saldo jälkeen": {
+        "sv": "Saldo efter",
+        "zh": "调整后余额"
+    },
+    "%1 v": {
+        "sv": "%1 år",
+        "zh": "%1 年"
+    },
+    "%1 kpl": {
+        "sv": "%1 st",
+        "zh": "%1 件"
+    },
+    "Tämä kirjanpidon sähköinen arkisto on luotu %1 <a href=https://kitsas.fi>Kitsas-ohjelman</a> versiolla %2": {
+        "sv": "Detta elektroniska arkiv för redovisning skapades %1 med version %2 av Kitsas-programmet",
+        "zh": "该电子会计档案由 Kitsas 程序 %2 版本于 %1 生成"
+    },
+    "Arkiston muuttumattomuus voidaan valvoa sha256-tiivisteellä": {
+        "sv": "Arkivets oändlighet kan övervakas med en sha256 sigill",
+        "zh": "可通过 sha256 摘要核验档案未被篡改"
+    },
+    "Kirjanpito on vielä keskeneräinen.": {
+        "sv": "Redovisningen är fortfarande oavslutad.",
+        "zh": "会计处理尚未完成。"
+    },
+    "Kirjanpito arkistoitu": {
+        "sv": "Bokföring arkiverad",
+        "zh": "会计已归档"
+    },
+    "Kirjanpitoarkisto": {
+        "sv": "Bokföringarkiv",
+        "zh": "会计档案"
+    },
+    "Kirjanpito": {
+        "sv": "Bokföring",
+        "zh": "会计"
+    },
+    "Raportit": {
+        "sv": "Rapporter",
+        "zh": "报表"
+    },
+    "Laskut ja myynti": {
+        "sv": "Räkningar och försäljning",
+        "zh": "发票与销售"
+    },
+    "Myydyt tuotteet": {
+        "sv": "Sålda produkter",
+        "zh": "已售商品"
+    },
+    "Edellinen": {
+        "sv": "Föregående",
+        "zh": "上一页"
+    },
+    "Seuraava": {
+        "sv": "Följande",
+        "zh": "下一页"
+    },
+    "Laskun numero": {
+        "sv": "Faktura nummer",
+        "zh": "发票编号"
+    },
+    "Tositteen täydet tiedot": {
+        "sv": "Fullständig information om verifikatet",
+        "zh": "凭证完整信息"
+    },
+    "Kirjanpidossa": {
+        "sv": "Redovisad",
+        "en": "Accounted",
+        "zh": "已入账"
+    },
+    "Luonnos": {
+        "sv": "Utkast",
+        "en": "Draft",
+        "zh": "草稿"
+    },
+    "Alv": {
+        "sv": "Moms",
+        "en": "Vat",
+        "zh": "增值税"
+    },
+    "Hylätty": {
+        "sv": "Avslagen",
+        "en": "Rejected",
+        "zh": "已拒绝"
+    },
+    "Saapunut": {
+        "sv": "Anlände",
+        "en": "Received",
+        "zh": "已到达"
+    },
+    "Tarkastettu": {
+        "sv": "Granskad",
+        "en": "Checked",
+        "zh": "已审核"
+    },
+    "Hyväksytty": {
+        "sv": "Godkänd",
+        "en": "Approved",
+        "zh": "已批准"
+    },
+    "Valmis": {
+        "sv": "Färdig",
+        "en": "Ready",
+        "zh": "完成"
+    },
+    "Lähetetään": {
+        "sv": "Överförs",
+        "en": "In progress",
+        "zh": "发送中"
+    },
+    "Lähetetty": {
+        "sv": "Skeppas",
+        "en": "Send",
+        "zh": "已发送"
+    },
+    "Muistutettu": {
+        "sv": "Påminde",
+        "en": "Recalled",
+        "zh": "已提醒"
+    },
+    "Toimitettu": {
+        "sv": "Levererad",
+        "en": "Delivered",
+        "zh": "已发货/已交付"
+    },
+    "Epäonnistui": {
+        "sv": "Misslyckades",
+        "en": "Failed",
+        "zh": "失败"
+    },
+    "alkuplasku": {
+        "fi": "Alkuperäinen lasku|Laskun numero: %1|Laskun päiväys: %2|Eräpäivä: %3",
+        "sv": "Originalfaktura|Fakturas nummer: %1|Datum: %2|Förfallodag: %3",
+        "en": "Original invoice|Invoice number: %1|Date of invoice: %2|Due date: %3",
+        "zh": "原始发票|发票号：%1|开票日期：%2|到期日：%3"
+    },
+    "toimpvm": {
+        "fi": "Toimituspäivämäärä",
+        "sv": "Leveransdatum",
+        "en": "Date of delivery",
+        "zh": "交付日期"
+    },
+    "muistutusnro": {
+        "fi": "Maksumuistutuksen numero",
+        "sv": "Betalningspåminnelses nummer",
+        "en": "Number of request for payment",
+        "zh": "付款提醒编号"
+    },
+    "asviite": {
+        "fi": "Asiakkaan viite",
+        "sv": "Kundens referens",
+        "en": "Your reference",
+        "zh": "客户参考"
+    },
+    "maksumuistutus": {
+        "fi": "MAKSUMUISTUTUS",
+        "sv": "BETALNINGSPÅMINNELSE",
+        "en": "REQUEST FOR PAYMENT",
+        "zh": "付款提醒"
+    },
+    "hyvnro": {
+        "fi": "Hyvityslaskun numero",
+        "sv": "Kreditnotans nummer",
+        "en": "Number of compensation invoice",
+        "zh": "贷项通知单编号"
+    },
+    "yhteensa": {
+        "fi": "Yhteensä",
+        "sv": "Totalt",
+        "en": "Total",
+        "zh": "合计"
+    },
+    "mmrivi": {
+        "fi": "Laskun avoin saldo",
+        "sv": "Öppet saldo för faktura",
+        "en": "Open balance for invoice",
+        "zh": "发票未结余额"
+    },
+    "anetto": {
+        "fi": "á netto",
+        "en": "á net",
+        "zh": "不含税单价"
+    },
+    "kateislasku": {
+        "fi": "Käteislasku / Kuitti",
+        "sv": "Kontantkvitto",
+        "en": "Cash receipt",
+        "zh": "现金收据"
+    },
+    "muistutussaate": {
+        "fi": "Kirjanpitomme mukaan emme ole saaneet maksusuoritustanne. Pyydämme maksuanne oheisen erittelyn mukaisesti. Mikäli olette jo maksaneet laskun tai lasku on virheellinen, ottakaa yhteyttä asian selvittämiseksi.",
+        "sv": "Enligt våra noteringar är ovanstående fakturor obetalda. Vi ber er betala dem omgående. Om ni har betalt eller om faktura är felig, var vänlig och kontakta oss.",
+        "en": "According to our records, we have not yet received a remittance for invoice in the attachement. If you have already sent your payment or there is a mistake in this invoice, please contact us.",
+        "zh": "根据我方账务记录，尚未收到您的款项。请按随附明细尽快支付。如已付款或发票有误，请及时与我们联系。"
+    },
+    "eimaksettavaa": {
+        "fi": "Ei maksettavaa",
+        "sv": "Ingen betalbar",
+        "en": "No payable",
+        "zh": "无需支付"
+    },
+    "luonnos": {
+        "fi": "LUONNOS",
+        "sv": "SKISS",
+        "en": "DRAFT",
+        "zh": "草稿"
+    },
+    "alv": {
+        "fi": "ALV",
+        "sv": "MOMS",
+        "en": "VAT",
+        "zh": "增值税"
+    },
+    "alvp": {
+        "fi": "Arvonlisävero",
+        "sv": "MOMS",
+        "en": "VAT",
+        "zh": "增值税"
+    },
+    "btl": {
+        "fi": "Tililtä nro|Från konto nr",
+        "sv": "Tililtä nro|Från konto nr",
+        "en": "From account|no.",
+        "zh": "从账户号"
+    },
+    "btilis": {
+        "fi": "TILISIIRTO. GIRERING",
+        "sv": "TILISIIRTO. GIRERING",
+        "en": "CREDIT TRANSFER",
+        "zh": "银行转账"
+    },
+    "pvm": {
+        "fi": "Päivämäärä",
+        "sv": "Datum",
+        "en": "Date",
+        "zh": "日期"
+    },
+    "bvn": {
+        "fi": "Viitenumero|Ref.nr.",
+        "sv": "Viitenumero|Ref.nr.",
+        "en": "Ref. No.",
+        "zh": "参考号"
+    },
+    "huomaika": {
+        "fi": "Huomautusaika",
+        "sv": "Anmärkningstid",
+        "en": "Period for complaints",
+        "zh": "异议期限"
+    },
+    "lkm": {
+        "fi": "Määrä",
+        "sv": "Antal",
+        "en": "Qty",
+        "zh": "数量"
+    },
+    "muistutusmaksu": {
+        "fi": "Huomautuskulut",
+        "sv": "Betalningspåminnelses avgift",
+        "en": "Request for payment fee",
+        "zh": "提醒费用"
+    },
+    "alv0": {
+        "fi": "Veroton myynti",
+        "sv": "Skattefri försäljning ",
+        "en": "Tax free sale",
+        "zh": "免税销售"
+    },
+    "alvtunnus": {
+        "fi": "ALV-tunnus",
+        "sv": "MOMS-nummer",
+        "en": "VAT number",
+        "zh": "增值税号"
+    },
+    "paivaa": {
+        "fi": "päivää",
+        "sv": "dagar",
+        "en": "days",
+        "zh": "天"
+    },
+    "veroton": {
+        "fi": "Veroton",
+        "sv": "Utan skatt",
+        "en": "Excluding VAT",
+        "zh": "不含税"
+    },
+    "erapvm": {
+        "fi": "Eräpäivä",
+        "sv": "Förfallodag",
+        "en": "Due date",
+        "zh": "到期日"
+    },
+    "bic": {
+        "fi": "BIC",
+        "sv": "BIC",
+        "en": "BIC",
+        "zh": "BIC 代码"
+    },
+    "viivkorko": {
+        "fi": "Viivästyskorko",
+        "sv": "Dröjsmålsränta",
+        "en": "Interest on overdue payments",
+        "zh": "逾期利息"
+    },
+    "maksettu": {
+        "fi": "Maksettu",
+        "sv": "Betald",
+        "en": "Paid",
+        "zh": "已付款"
+    },
+    "laskuotsikko": {
+        "fi": "Lasku",
+        "sv": "Faktura",
+        "en": "Invoice",
+        "zh": "发票"
+    },
+    "muistutusteksti": {
+        "fi": "Kirjanpitomme mukaan emme ole saaneet maksusuoritustanne. Pyydämme maksuanne alla olevan erittelyn mukaisesti. Mikäli olette jo maksaneet laskun tai lasku on virheellinen, ottakaa yhteyttä asian selvittämiseksi.",
+        "sv": "Enligt våra noteringar är ovanstående fakturor obetalda. Vi ber er betala dem omgående. Om ni har betalt eller om faktura är felig, var vänlig och kontakta oss.",
+        "en": "According to our records, we have not yet received a remittance for above invoice. If you have already sent your payment or there is a mistake in this invoice, please contact us.",
+        "zh": "根据我方记录，尚未收到上述发票的款项。如已付款或发票有误，请与我们联系。"
+    },
+    "asytunnus": {
+        "fi": "Asiakkaan y-tunnus",
+        "sv": "Kundens FO-nummer",
+        "en": "Customer's Business ID",
+        "zh": "客户企业编号"
+    },
+    "jatkuu": {
+        "fi": "Jatkuu...",
+        "sv": "Fortsätter...",
+        "en": "To be continued...",
+        "zh": "继续..."
+    },
+    "puhelin": {
+        "fi": "Puhelin",
+        "sv": "Telefon",
+        "en": "Phone",
+        "zh": "电话"
+    },
+    "eur": {
+        "fi": "Euro",
+        "sv": "Euro",
+        "en": "Euro",
+        "zh": "欧元"
+    },
+    "ale%": {
+        "fi": "Alennus",
+        "sv": "rabatt%",
+        "en": "discount%",
+        "zh": "折扣%"
+    },
+    "ale": {
+        "fi": "Alennus",
+        "sv": "Rabatt",
+        "en": "Discount",
+        "zh": "折扣"
+    },
+    "lnro": {
+        "fi": "Laskun numero",
+        "sv": "Fakturans nummer",
+        "en": "Invoice number",
+        "zh": "发票编号"
+    },
+    "bst": {
+        "fi": "Saajan|tilinumero|Mottagarens|kontonummer",
+        "sv": "Saajan|tilinumero|Mottagarens|kontonummer",
+        "en": "Recipient's|account number",
+        "zh": "收款人账号"
+    },
+    "virtviiv": {
+        "fi": "Virtuaaliviivakoodi",
+        "sv": "Virtuell streckkod",
+        "en": "Virtual barcode",
+        "zh": "虚拟条码"
+    },
+    "alv91": {
+        "fi": "Voittomarginaalijärjestelmä - Käytetyt tavarat",
+        "sv": "Vinstmarginalsystem - Begagnade varor",
+        "en": "Margin scheme - Second-hand goods",
+        "zh": "利润率制度—二手商品"
+    },
+    "bmo": {
+        "fi": "Maksajan|nimi ja|osoite|Betalarens|namn och|address",
+        "sv": "Maksajan|nimi ja|osoite|Betalarens|namn och|address",
+        "en": "Payer's|name and|address",
+        "zh": "付款人姓名与地址"
+    },
+    "alv93": {
+        "fi": "Voittomarginaalijärjestelmä - Keräily- ja antiikkiesineet",
+        "sv": "Vinstmarginalsystem - Samlarföremål och antikviteter",
+        "en": "Margin scheme - Collectors' items and antiques",
+        "zh": "利润率制度—收藏品与古董"
+    },
+    "alv92": {
+        "fi": "Voittomarginaalijärjestelmä - Taide-esineet",
+        "sv": "Vinstmarginalsystem - Konstverk",
+        "en": "Margin scheme - Works of art",
+        "zh": "利润率制度—艺术品"
+    },
+    "alv15": {
+        "fi": "AVL 65 §: Käännetty verovelvollisuus, arvonlisäverodirektiivi art. 44",
+        "sv": "AVL 65 §: Omvänd skattsskyldighet, momsdirektivet artikel 44",
+        "en": "AVL 65 §: Reverse charge, VAT Directive art. 44",
+        "zh": "芬兰增值税法第65条：逆向征收，增值税指令第44条"
+    },
+    "alv14": {
+        "fi": "AVL 72a §: ALV 0% Yhteisömyynti",
+        "sv": "AVL 72 a §: Moms 0 % Gemenskapförsäljning",
+        "en": "AVL 72a §: VAT 0% Intra Community supply",
+        "zh": "芬兰增值税法第72a条：增值税0% 欧盟区内销售"
+    },
+    "alv16": {
+        "fi": "AVL 8 c §: Käännetty verovelvollisuus",
+        "sv": "AVL 8 c: Omvänd skattsskyldighet, momsdirektivet artikel 199",
+        "en": "AVL 8 c §: Reverse charge, VAT Directive art. 199",
+        "zh": "芬兰增值税法第8c条：逆向征收，增值税指令第199条"
+    },
+    "alv19": {
+        "fi": "ALV 0%",
+        "sv": "MOMS 0%",
+        "en": "VAT 0%",
+        "zh": "增值税 0%"
+    },
+    "iban": {
+        "fi": "IBAN",
+        "sv": "IBAN",
+        "en": "IBAN",
+        "zh": "IBAN 账号"
+    },
+    "aiempimuistutus": {
+        "fi": "Aiempi maksumuistutus|Laskun numero: %1|Laskun päiväys: %2|Eräpäivä: %3",
+        "sv": "Tidigare betalningspåminnelse|Faktura nummer: %1|Datum: %2|Förfallodag: %3",
+        "en": "Earlier request for payment|Invoice number: %1|Date on invoice: %2|Due date: %3",
+        "zh": "此前付款提醒|发票号：%1|开票日期：%2|到期日：%3"
+    },
+    "alv13": {
+        "fi": "Voittomarginaalijärjestelmä",
+        "sv": "Vinstmarginalsystem - Begagnade varor",
+        "en": "Margin scheme",
+        "zh": "利润率制度"
+    },
+    "lpvm": {
+        "fi": "Laskun päivämäärä",
+        "sv": "Datum",
+        "en": "Date",
+        "zh": "开票日期"
+    },
+    "viitenro": {
+        "fi": "Viitenumero",
+        "sv": "Referensnummer",
+        "en": "Reference number",
+        "zh": "参考号"
+    },
+    "hyvitysteksti": {
+        "fi": "Hyvityslasku laskulle %1, päiväys %2",
+        "sv": "Kompensation för faktura %1, datum %2",
+        "en": "Compensation for invoice %1, date %2",
+        "zh": "针对发票 %1 的贷项，日期 %2"
+    },
+    "hyvpvm": {
+        "fi": "Hyvityksen päivämäärä",
+        "sv": "Kompensationdatum",
+        "en": "Date of compensation",
+        "zh": "贷项日期"
+    },
+    "sahkoposti": {
+        "fi": "Sähköposti",
+        "sv": "E-post",
+        "en": "Email",
+        "zh": "电子邮箱"
+    },
+    "bsa": {
+        "fi": "Saaja|Mottagare",
+        "sv": "Saaja|Mottagare",
+        "en": "Recipient",
+        "zh": "收款人"
+    },
+    "ahinta": {
+        "fi": "á hinta",
+        "sv": "á pris",
+        "en": "á price",
+        "zh": "单价"
+    },
+    "hinta": {
+        "fi": "Hinta",
+        "sv": "Pris",
+        "en": "Price",
+        "zh": "价格"
+    },
+    "ennakkolasku": {
+        "fi": "Ennakkolasku",
+        "sv": "Förhandsfaktura",
+        "en": "Advance invoice",
+        "zh": "预付款发票"
+    },
+    "enhyri": {
+        "fi": "Ennakkolaskun %1 hyvitys",
+        "sv": "Kompensation för förhandsfaktura %1",
+        "en": "Compensation for advance invoice %1",
+        "zh": "预付款发票 %1 的贷项"
+    },
+    "alennus": {
+        "sv": "rabatt",
+        "en": "discount",
+        "zh": "折扣"
+    },
+    "summa": {
+        "fi": "Laskun summa",
+        "sv": "Totalt",
+        "en": "Total",
+        "zh": "发票"
+    },
+    "hlasku": {
+        "fi": "Hyvityslasku",
+        "sv": "Kreditnota",
+        "en": "Compensation invoice",
+        "zh": "贷项通知单"
+    },
+    "ytunnus": {
+        "fi": "Y-tunnus",
+        "sv": "FO-nummer",
+        "en": "Business ID",
+        "zh": "企业编号（Y-tunnus）"
+    },
+    "verollinen": {
+        "fi": "Verollinen",
+        "sv": "Med skatten",
+        "en": "Includes VAT",
+        "zh": "含税"
+    },
+    "YhteensaVeroton": {
+        "fi": "Yhteensä veroton",
+        "sv": "Totalt utan skatten",
+        "en": "Total excludes VAT",
+        "zh": "不含税合计"
+    },
+    "YhteensaVerollinen": {
+        "fi": "Yhteensä verollinen",
+        "sv": "Totalt med skatten",
+        "en": "Total includes VAT",
+        "zh": "含税合计"
+    },
+    "mmotsikko": {
+        "fi": "Maksumuistutus laskusta %1",
+        "sv": "Betalningspåminnelse för faktura %1",
+        "en": "Request for payment %1",
+        "zh": "发票 %1 的付款提醒"
+    },
+    "Yhteensa": {
+        "fi": "Yhteensä",
+        "sv": "Totalt",
+        "en": "Total",
+        "zh": "合计"
+    },
+    "eialv": {
+        "fi": "Myyjä ei arvonlisäverovelvollinen",
+        "sv": "Säljare är inte momsskyldig",
+        "en": "Seller is not liable to pay VAT",
+        "zh": "卖方不属于增值税纳税人"
+    },
+    "behto": {
+        "fi": "Maksu välitetään saajalle maksujenvälityksen ehtojen mukaisesti ja vain maksajan ilmoittaman tilinumeron perusteella.|Betalning förmedlas till mottagaren enligt villkoren för betalningsförmedling och endast till det kontonummer som betalaren angivit.",
+        "sv": "Maksu välitetään saajalle maksujenvälityksen ehtojen mukaisesti ja vain maksajan ilmoittaman tilinumeron perusteella.|Betalning förmedlas till mottagaren enligt villkoren för betalningsförmedling och endast till det kontonummer som betalaren angivit.",
+        "en": "The payment will be cleared for the recipient in accordance with the General terms for payment transmission and only on the basis of the account number given by the payer.",
+        "zh": "付款将按支付传输的一般条款进行，并仅依据付款人提供的账号处理。"
+    },
+    "harjoitus": {
+        "fi": "HARJOITUS",
+        "sv": "ÖVNING",
+        "en": "TRIAL",
+        "zh": "练习/测试"
+    },
+    "aiempisaldo": {
+        "fi": "Alemman erittelyn mukaisista laskuista on maksamatta yhteensä %L1 €",
+        "sv": "Obetalda totalsumman från fakturor enligt följande specificering är %L1 €",
+        "en": "The total unpayed amount of invoices detailed below is %L1 €",
+        "zh": "以下明细所列发票未结金额合计 %L1 €"
+    },
+    "asalvtunnus": {
+        "fi": "Asiakkaan ALV-tunnus",
+        "sv": "Kundens MOMS-nummer",
+        "en": "Customer's VAT number",
+        "zh": "客户增值税号"
+    },
+    "netto": {
+        "fi": "Veroton",
+        "sv": "Utan skatt",
+        "en": "Excludes VAT",
+        "zh": "不含税"
+    },
+    "nimike": {
+        "fi": "Nimike",
+        "sv": "Item",
+        "en": "Item",
+        "zh": "项目"
+    },
+    "bep": {
+        "fi": "Eräpäivä|Förfallodag",
+        "sv": "Eräpäivä|Förfallodag",
+        "en": "Due date",
+        "zh": "到期日"
+    },
+    "kpl": {
+        "fi": "Kpl",
+        "sv": "Antal",
+        "en": "Quantity",
+        "zh": "件"
+    },
+    "bak": {
+        "fi": "Allekirjoitus|Underskrift",
+        "sv": "Allekirjoitus|Underskrift",
+        "en": "Signature",
+        "zh": "签字"
+    },
+    "kotisivu": {
+        "fi": "Kotisivu",
+        "sv": "Hemsida",
+        "en": "Homepage",
+        "zh": "主页"
+    },
+    "pankki": {
+        "fi": "Pankki",
+        "sv": "Bank",
+        "en": "Bank",
+        "zh": "银行"
+    },
+    "hyvityslasku": {
+        "fi": "Hyvityslasku",
+        "sv": "Kreditnota",
+        "en": "Credit note",
+        "zh": "贷项通知单"
+    },
+    "hyvitettavaNumero": {
+        "fi": "Hyvitettävän laskun numero",
+        "sv": "Krediterbart faktureringsnummer",
+        "en": "Credable invoice number",
+        "zh": "被贷记发票编号"
+    },
+    "hyvitettavaPvm": {
+        "fi": "Hyvitettävän laskun pvm",
+        "sv": "Krediterbart faktureringsdatum",
+        "en": "Credable invoice date",
+        "zh": "被贷记发票日期"
+    },
+    "hyvPvm": {
+        "fi": "Hyvityslaskun pvm",
+        "sv": "Kreditnotans datum",
+        "en": "Date of credit note",
+        "zh": "贷项通知日期"
+    },
+    "muistutuspvm": {
+        "fi": "Maksumuistutuksen pvm",
+        "sv": "Betalningsåminnelses datum",
+        "en": "Date of request for payment",
+        "zh": "付款提醒日期"
+    },
+    "UN_C62": {
+        "fi": "kpl",
+        "sv": "st",
+        "en": "pcs",
+        "zh": "件"
+    },
+    "UN_NMP": {
+        "fi": "pkt",
+        "sv": "förpackningar",
+        "en": "packets",
+        "zh": "包"
+    },
+    "UN_IE": {
+        "fi": "hlö",
+        "sv": "personer",
+        "en": "persons",
+        "zh": "人"
+    },
+    "UN_KGM": {
+        "fi": "kg",
+        "sv": "kg",
+        "en": "kg",
+        "zh": "千克"
+    },
+    "UN_LTR": {
+        "fi": "l",
+        "sv": "l",
+        "en": "litre",
+        "zh": "升"
+    },
+    "UN_ANN": {
+        "fi": "v",
+        "sv": "år",
+        "en": "ann",
+        "zh": "年"
+    },
+    "UN_MON": {
+        "fi": "kk",
+        "sv": "mån",
+        "en": "mon",
+        "zh": "月"
+    },
+    "UN_DAY": {
+        "fi": "pv",
+        "sv": "dag",
+        "en": "day",
+        "zh": "日"
+    },
+    "UN_HUR": {
+        "fi": "h",
+        "sv": "h",
+        "en": "hour",
+        "zh": "小时"
+    },
+    "UN_MIN": {
+        "fi": "min",
+        "sv": "min",
+        "en": "min",
+        "zh": "分钟"
+    },
+    "UN_LH": {
+        "fi": "h",
+        "sv": "h",
+        "en": "hour",
+        "zh": "小时"
+    },
+    "UN_ACT": {
+        "fi": "yks",
+        "sv": "enhet",
+        "en": "unit",
+        "zh": "单位"
+    },
+    "UN_E50": {
+        "fi": "yks",
+        "sv": "enhet",
+        "en": "unit",
+        "zh": "单位"
+    },
+    "UN_E51": {
+        "fi": "krt",
+        "sv": "gång",
+        "en": "job",
+        "zh": "次"
+    },
+    "UN_KMT": {
+        "fi": "km",
+        "sv": "km",
+        "en": "km",
+        "zh": "千米"
+    },
+    "UN_KWH": {
+        "fi": "kWh",
+        "sv": "kWh",
+        "en": "kWh",
+        "zh": "千瓦时"
+    },
+    "UN_MTR": {
+        "fi": "m",
+        "sv": "m",
+        "en": "m",
+        "zh": "米"
+    },
+    "UN_CMT": {
+        "fi": "cm",
+        "sv": "cm",
+        "en": "cm",
+        "zh": "厘米"
+    },
+    "UN_MTK": {
+        "fi": "m²",
+        "sv": "m²",
+        "en": "m²",
+        "zh": "平方米"
+    },
+    "UN_MTQ": {
+        "fi": "m³",
+        "sv": "m³",
+        "en": "m³",
+        "zh": "立方米"
+    },
+    "UN_E21": {
+        "fi": "osaketta",
+        "sv": "aktier",
+        "en": "share",
+        "zh": "股"
+    },
+    "UN_ZP": {
+        "fi": "sivua",
+        "sv": "sidor",
+        "en": "pages",
+        "zh": "页"
+    },
+    "UN_H18": {
+        "fi": "ha",
+        "sv": "ha",
+        "en": "ha",
+        "zh": "公顷"
+    },
+    "toimitettu": {
+        "fi": "Toimitettu",
+        "sv": "Levererad",
+        "en": "Delivered",
+        "zh": "已交付"
+    },
+    "jalkitoimitus": {
+        "fi": "Jälkitoimitus",
+        "sv": "Efterleverans",
+        "en": "Subsequent delivery",
+        "zh": "后续交付"
+    },
+    "huoneisto": {
+        "fi": "Huoneisto",
+        "sv": "Lågenhet",
+        "en": "Flat",
+        "zh": "房号"
+    },
+    "laskutusjakso": {
+        "fi": "Laskutuskausi",
+        "sv": "Fakturingsperiod",
+        "en": "Invoicing period",
+        "zh": "计费周期"
+    },
+    "maksettavaa": {
+        "fi": "Maksettavaa",
+        "sv": "Betalningsbelopp",
+        "en": "Payable",
+        "zh": "应付金额"
+    },
+    "tilausnro": {
+        "fi": "Tilausnumero",
+        "sv": "Beställningsnummer",
+        "en": "Order number",
+        "zh": "订单号"
+    },
+    "sopimusnro": {
+        "fi": "Sopimusnumero",
+        "sv": "Avtalsnummer",
+        "en": "Contract number",
+        "zh": "合同号"
+    },
+    "myyja": {
+        "fi": "Myyjä",
+        "sv": "Säljare",
+        "en": "Salesperson",
+        "zh": "销售人员"
+    },
+    "tilaaja": {
+        "fi": "Tilaaja",
+        "sv": "Beställare",
+        "en": "Orderer",
+        "zh": "订购方"
+    },
+    "tilauspvm": {
+        "fi": "Tilauspäivämäärä",
+        "sv": "Beställningdatum",
+        "en": "Order date",
+        "zh": "订购日期"
+    },
+    "Vastaavaa": {
+        "sv": "Passiva",
+        "zh": "资产"
+    },
+    "Poistokelpoinen omaisuus menojäännöspoisto": {
+        "sv": "Avskrivningbara tillgångar restvärdeavskrivning",
+        "zh": "可折旧资产（余额递减折旧）"
+    },
+    "Poistokelpoinen omaisuus tasapoistolla": {
+        "sv": "Avskrivningbara tillgångar linjär avskrivning",
+        "zh": "可折旧资产（直线折旧）"
+    },
+    "Saatavaa": {
+        "sv": "Fordringar",
+        "zh": "应收款项"
+    },
+    "Myyntisaatavat": {
+        "sv": "Försäljningsfordringar",
+        "zh": "应收账款"
+    },
+    "Siirtosaamiset": {
+        "sv": "Resultatregleringsfordringar",
+        "zh": "待摊/预付费用"
+    },
+    "Arvonlisäverosaatava": {
+        "sv": "Mervärdesskattefordringar",
+        "zh": "增值税留抵税额"
+    },
+    "Maksuperusteisen alv:n kohdentamaton saatava": {
+        "sv": "Icke fördelat mervärdeskattefordringar enligt betalningsprincipen",
+        "zh": "未归集的收付实现制增值税应收"
+    },
+    "Verosaatava": {
+        "sv": "Skattefordningar",
+        "zh": "应收税金"
+    },
+    "Käteisvarat": {
+        "sv": "Kassa",
+        "zh": "现金"
+    },
+    "Pankkitili": {
+        "sv": "Bankkonto",
+        "zh": "银行存款"
+    },
+    "Vastattavaa": {
+        "sv": "Passiva",
+        "zh": "负债及所有者权益"
+    },
+    "Edellisten tilikausien voitto/tappio": {
+        "sv": "Vinst (förlust) från tidigare perioder",
+        "zh": "以前年度损益"
+    },
+    "Tilikauden tulos": {
+        "sv": "Räkenskapsperiodens resultat",
+        "zh": "本期损益"
+    },
+    "Velat": {
+        "sv": "Skulder",
+        "zh": "负债"
+    },
+    "Ostovelat": {
+        "sv": "Leverantörsskulder",
+        "zh": "应付账款"
+    },
+    "Siirtovelat": {
+        "sv": "Resultatregleringsskulder",
+        "zh": "预提/待付费用"
+    },
+    "Arvonlisäverovelka": {
+        "sv": "Mervärdesskatteskuld",
+        "zh": "应付增值税"
+    },
+    "Maksuperusteisen alv:n kohdentamaton velka": {
+        "sv": "Icke fördelat mervärdeskatteskulder enligt betalningsprincipen",
+        "zh": "未归集的收付实现制增值税应付"
+    },
+    "Verovelka": {
+        "sv": "Skatteskulder",
+        "zh": "应交税费"
+    },
+    "Yksityisnostot": {
+        "sv": "Privat bruk ",
+        "zh": "所有者取款"
+    },
+    "Tulot": {
+        "sv": "Inkomster",
+        "zh": "收入"
+    },
+    "Liikevaihtotulo (myynti)": {
+        "sv": "Omsättinginkomst (försäljning)",
+        "zh": "主营业务收入（销售）"
+    },
+    "Verottomat tulot": {
+        "sv": "Skattefria inkomster",
+        "zh": "免税收入"
+    },
+    "Veroton myynti": {
+        "sv": "Försäljning av tjänster till andra EU-länder",
+        "zh": "零税率销售/免税销售"
+    },
+    "Menot": {
+        "sv": "Utgifter",
+        "zh": "支出"
+    },
+    "Poistot": {
+        "sv": "Avskriningar",
+        "zh": "折旧"
+    },
+    "Vähennyskelvottomat menot": {
+        "sv": "Icke avragskill utgifter",
+        "zh": "不可抵扣支出"
+    },
+    "Puoliksi vähennyskelpoiset menot": {
+        "sv": "Halvt avragskill utgifter",
+        "zh": "50%可抵扣支出"
+    },
+    "Vähennyskelvottomat poistot": {
+        "sv": "Icke avragskill avskrivningar",
+        "zh": "不可抵扣折旧"
+    },
+    "Ennakkoverot": {
+        "sv": "Förskottsskatter",
+        "zh": "预缴税款"
+    },
+    "KK1": {
+        "fi": "Tammikuu",
+        "sv": "Januari",
+        "en": "January",
+        "zh": "一月"
+    },
+    "KK2": {
+        "fi": "Helmikuu",
+        "sv": "Februari",
+        "en": "February",
+        "zh": "二月"
+    },
+    "KK3": {
+        "fi": "Maaliskuu",
+        "sv": "Mars",
+        "en": "March",
+        "zh": "三月"
+    },
+    "KK4": {
+        "fi": "Huhtikuu",
+        "sv": "April",
+        "en": "April",
+        "zh": "四月"
+    },
+    "KK5": {
+        "fi": "Toukokuu",
+        "sv": "Maj",
+        "en": "May",
+        "zh": "五月"
+    },
+    "KK6": {
+        "fi": "Kesäkuu",
+        "sv": "Juni",
+        "en": "June",
+        "zh": "六月"
+    },
+    "KK7": {
+        "fi": "Heinäkuu",
+        "sv": "Juli",
+        "en": "July",
+        "zh": "七月"
+    },
+    "KK8": {
+        "fi": "Elokuu",
+        "sv": "Augusti",
+        "en": "August",
+        "zh": "八月"
+    },
+    "KK9": {
+        "fi": "Syyskuu",
+        "sv": "September",
+        "en": "September",
+        "zh": "九月"
+    },
+    "KK10": {
+        "fi": "Lokakuu",
+        "sv": "Oktober",
+        "en": "October",
+        "zh": "十月"
+    },
+    "KK11": {
+        "fi": "Marraskuu",
+        "sv": "November",
+        "en": "November",
+        "zh": "十一月"
+    },
+    "KK12": {
+        "fi": "Joulukuu",
+        "sv": "December",
+        "en": "December",
+        "zh": "十二月"
+    },
+    "Tilinpäätöstä on säilytettävä %1 saakka": {
+        "sv": "Bokslutet ska bevaras upp till %1",
+        "en": "Financial statements must be kept until %1",
+        "zh": "财务报表须保存至 %1"
+    },
+    "Tositteita on säilytettävä %1 saakka": {
+        "sv": "Verifikationerna ska bevaras upp till %1",
+        "en": "Vouchers must be kept up to %1",
+        "zh": "原始凭证须保存至 %1"
+    },
+    "Vientejä %1 kpl": {
+        "sv": "%1 konteringar",
+        "en": "%1 entries",
+        "zh": "分录 %1 笔"
+    }
+}

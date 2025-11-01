@@ -1,0 +1,141 @@
+body {
+  font-family: sans-serif;
+}
+
+div.kirjanpito {
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+td a {
+  color: blue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.liiteluettelo {
+  margin-top: 0px;
+  border: 1px solid #505050;
+}
+table.liiteluettelo tr:hover {
+  background-color: #ccc;
+}
+
+table.tositeotsikot {
+  margin-top: 2em;
+}
+td.paiva {
+  width: 10em;
+  font-weight: bold;
+}
+td.tositeotsikko {
+  width: 100%;
+  font-weight: bold;
+}
+td.tositetyyppi {
+  min-width: 8em;
+}
+td.tositetunnus {
+  text-align: right;
+  min-width: 8em;
+  font-weight: bold;
+  font-size: large;
+}
+td.tositekumppani {
+}
+
+table.viennit {
+  border: 1px solid #505050;
+}
+table.viennit th,
+table.viennit td {
+  border-right: 1px solid #505050;
+}
+table.viennit th {
+  text-align: left;
+  background-color: #e7e7e7;
+  font-weight: normal;
+}
+table.viennit td.pvm {
+  min-width: 6em;
+}
+table.viennit td.tili {
+  min-width: 12em;
+}
+table.viennit td.kohdennus {
+  min-width: 8em;
+}
+table.viennit td.kumppani {
+  min-width: 8em;
+}
+table.viennit td.selite {
+  width: 100%;
+}
+
+table.vienni td.alv {
+  text-align: right;
+  min-width: 6em;
+}
+
+table.viennit td.euro {
+  text-align: right;
+  min-width: 8em;
+}
+table.viennit td.erasaldo {
+  border-top: 1px solid #505050;
+  text-align: right;
+}
+table.viennit tr:hover {
+  background-color: #ccc;
+}
+
+p.info {
+  font-size: 10pt;
+  margin-top: 2em;
+}
+
+table.extra {
+  margin-top: 20;
+}
+table.extra td.extrahead {
+  min-width: 12em;
+}
+table.extra td.extracol {
+  width: 100%;
+}
+
+table.loki {
+	margin-top: 20;
+}
+
+span.treeni {
+  color: green;
+}
+a {
+  text-decoration: none;
+}
+img.logo {
+  float: right;
+  margin: 1em;
+  max-width: 50%;
+}
+
+h2.etusivu {
+  font-size: 16pt;
+  font-weight: normal;
+}
+
+@media print {
+  nav ul li.nappi {
+    display: none;
+  }
+  a {
+    color: black;
+  }
+  a.avaaliite {
+    display: none;
+  }
+}

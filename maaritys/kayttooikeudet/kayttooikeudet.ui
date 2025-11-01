@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KayttoOikeudet</class>
+ <widget class="QWidget" name="KayttoOikeudet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1035</width>
+    <height>1087</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_12">
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Kirjanpidon käyttöoikeudet</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="font">
+      <font>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Lisää käyttäjä</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Lisättävän käyttäjän sähköpostiosoite</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lisaysEdit">
+          <property name="font">
+           <font>
+            <bold>false</bold>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="lisaysNappi">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="font">
+           <font>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Lisää</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../pic/pic.qrc">
+            <normaloff>:/pic/uusiasiakas.png</normaloff>:/pic/uusiasiakas.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="kutsuButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Kutsu</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../pic/pic.qrc">
+            <normaloff>:/pic/email.png</normaloff>:/pic/email.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,2">
+     <item>
+      <widget class="QListView" name="view">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QLabel" name="nimiLabel">
+              <property name="styleSheet">
+               <string notr="true">font-size: 16pt;
+font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Nimi</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="emailLabel">
+              <property name="text">
+               <string>osoite@fi</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="omistajaLabel">
+              <property name="text">
+               <string>Kirjanpidon omistaja</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="OikeusWidget" name="oikeusWidget" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="poistaNappi">
+              <property name="text">
+               <string>Poista oikeudet</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../pic/pic.qrc">
+                <normaloff>:/pic/eikaytossa.png</normaloff>:/pic/eikaytossa.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="kaikkiNappi">
+              <property name="text">
+               <string>Kaikki oikeudet</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../pic/pic.qrc">
+                <normaloff>:/freeicons/adminkey.png</normaloff>:/freeicons/adminkey.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="uusikutsuBtn">
+              <property name="text">
+               <string>Lähetä kutsu uudelleen</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../pic/pic.qrc">
+                <normaloff>:/pic/email32.png</normaloff>:/pic/email32.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="tallennaNappi">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Tallenna</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../../pic/pic.qrc">
+                <normaloff>:/pic/ok.png</normaloff>:/pic/ok.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OikeusWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">maaritys/kayttooikeudet/oikeuswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>lisaysEdit</tabstop>
+  <tabstop>lisaysNappi</tabstop>
+  <tabstop>kutsuButton</tabstop>
+  <tabstop>view</tabstop>
+  <tabstop>poistaNappi</tabstop>
+  <tabstop>kaikkiNappi</tabstop>
+  <tabstop>tallennaNappi</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../pic/pic.qrc"/>
+ </resources>
+ <connections/>
+</ui>

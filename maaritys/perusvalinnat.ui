@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Perusvalinnat</class>
+ <widget class="QWidget" name="Perusvalinnat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>1029</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Perusvalinnat</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Organisaatio</string>
+       </property>
+       <property name="buddy">
+        <cstring>organisaatioEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="organisaatioEdit">
+       <property name="Asetus" stdset="0">
+        <string notr="true">Nimi</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Y-tunnus</string>
+       </property>
+       <property name="buddy">
+        <cstring>ytunnusEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="ytunnusEdit">
+       <property name="maxLength">
+        <number>9</number>
+       </property>
+       <property name="Asetus" stdset="0">
+        <string notr="true">Ytunnus</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="muotoLabel">
+       <property name="text">
+        <string>Yritysmuoto</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="muotoCombo">
+       <property name="Asetus" stdset="0">
+        <string notr="true">muoto</string>
+       </property>
+       <property name="Vaihtoehdot" stdset="0">
+        <string notr="true">muodot</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Laajuus</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="laajuusCombo">
+       <property name="Asetus" stdset="0">
+        <string notr="true">laajuus</string>
+       </property>
+       <property name="Vaihtoehdot" stdset="0">
+        <string notr="true">laajuudet</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Kotipaikka</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="Asetus" stdset="0">
+        <string notr="true">Kotipaikka</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,0">
+     <item row="0" column="0">
+      <widget class="QLabel" name="aliasLabel">
+       <property name="text">
+        <string>Alias</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="vaihdaArkistoNappi">
+         <property name="minimumSize">
+          <size>
+           <width>64</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Vaihda</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../pic/pic.qrc">
+           <normaloff>:/pic/kansiossa.png</normaloff>:/pic/kansiossa.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="avaaArkistoNappi">
+         <property name="minimumSize">
+          <size>
+           <width>64</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Avaa</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../pic/pic.qrc">
+           <normaloff>:/pic/kansiossa.png</normaloff>:/pic/kansiossa.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="kokoEdit">
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="tsLabel">
+       <property name="text">
+        <string>Tiedoston sijainti</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="hakemistoNappi">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Avaa hakemisto</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../pic/pic.qrc">
+         <normaloff>:/pic/folder.png</normaloff>:/pic/folder.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="sijaintiLabel">
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::FocusPolicy::NoFocus</enum>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="arkistoEdit">
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="karttaInfo">
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Tilikartta</string>
+       </property>
+       <property name="buddy">
+        <cstring>karttaInfo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="arkistoLabel">
+       <property name="text">
+        <string>Arkiston sijainti</string>
+       </property>
+       <property name="buddy">
+        <cstring>arkistoEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Kirjanpidon koko</string>
+       </property>
+       <property name="buddy">
+        <cstring>kokoEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="aliasEdit">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="aliasButton">
+       <property name="text">
+        <string>Määritä alias</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../pic/pic.qrc">
+         <normaloff>:/pic/link.png</normaloff>:/pic/link.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QCheckBox" name="alvCheck">
+       <property name="text">
+        <string>Arvonlisäverovelvollinen</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../pic/pic.qrc">
+         <normaloff>:/pic/vero.png</normaloff>:/pic/vero.png</iconset>
+       </property>
+       <property name="Asetus" stdset="0">
+        <string>AlvVelvollinen</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="KpDateEdit" name="alvAlkaaEdit">
+       <property name="Asetus" stdset="0">
+        <string notr="true">AlvAlkaa</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>alkaen</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>päättyy</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="KpDateEdit" name="alvPaattyyEdit">
+       <property name="Asetus" stdset="0">
+        <string notr="true">AlvLoppuu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="harjoitusCheck">
+     <property name="text">
+      <string>Harjoituskirjanpito</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../pic/pic.qrc">
+       <normaloff>:/pic/muokkaa.png</normaloff>:/pic/muokkaa.png</iconset>
+     </property>
+     <property name="Asetus" stdset="0">
+      <string>Harjoitus</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Policy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>2500</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KpDateEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">tools/kpdateedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>organisaatioEdit</tabstop>
+  <tabstop>ytunnusEdit</tabstop>
+  <tabstop>muotoCombo</tabstop>
+  <tabstop>hakemistoNappi</tabstop>
+  <tabstop>sijaintiLabel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../pic/pic.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>alvCheck</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>alvAlkaaEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>alvCheck</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>alvPaattyyEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>357</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

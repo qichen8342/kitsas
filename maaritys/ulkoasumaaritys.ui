@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ulkoasu</class>
+ <widget class="QWidget" name="Ulkoasu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>642</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Käyttöliittymä</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Kieli</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="fiKieli">
+        <property name="text">
+         <string>suomi</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../pic/pic.qrc">
+          <normaloff>:/liput/fi.png</normaloff>:/liput/fi.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="svKieli">
+        <property name="text">
+         <string>ruotsi</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../pic/pic.qrc">
+          <normaloff>:/liput/se.png</normaloff>:/liput/se.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="enKieli">
+          <property name="text">
+           <string>englanti</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../pic/pic.qrc">
+            <normaloff>:/liput/gb.png</normaloff>:/liput/gb.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 163, 72);</string>
+          </property>
+          <property name="text">
+           <string> beta </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="karttakieliGroup">
+     <property name="title">
+      <string>Tilikartan kieli</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="KieliCombo" name="tilikarttaKieli"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Kirjasin</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="oletusfontti">
+        <property name="text">
+         <string>Järjestelmän oletuskirjasin</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="omafontti">
+          <property name="text">
+           <string>Omavalintainen</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFontComboBox" name="fonttiCombo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="kokoCombo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="saldotCheck">
+     <property name="text">
+      <string>Saldonäkymä</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../pic/pic.qrc">
+       <normaloff>:/pic/raha2.png</normaloff>:/pic/raha2.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="pikaPdfCheck">
+     <property name="text">
+      <string>Nopeampi pdf-tiedostojen esittäminen</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../pic/pic.qrc">
+       <normaloff>:/pic/pdf.png</normaloff>:/pic/pdf.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>204</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KieliCombo</class>
+   <extends>QComboBox</extends>
+   <header location="global">kieli/kielicombo.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../pic/pic.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>omafontti</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>fonttiCombo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>537</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>omafontti</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>kokoCombo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>774</x>
+     <y>161</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

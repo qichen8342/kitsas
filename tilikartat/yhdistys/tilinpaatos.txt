@@ -1,0 +1,462 @@
+[fi]
+## Raportit
+#pmaTaseE -I Tilikohtaisesti eritelty tase
+@tase/yleinen:E!TASE (TILINPÄÄTÖS)@
+#-pmaTaseE -ISO
+@tase/PMA!TASE (TILINPÄÄTÖS)@
+#isoTaseE -P -M Tilikohtaisesti eritelty tase
+@tase/yleinen:E!TASE (TILINPÄÄTÖS)@
+#-isoTaseE -PIEN -MIKRO
+@tase/yleinen!TASE (TILINPÄÄTÖS)@
+#eriteltyTulos Tilikohtaisesti eritelty tuloslaskelma
+@tulos/yleinen:E!TULOSLASKELMA (TILINPÄÄTÖS)@
+#-eriteltyTulos
+@tulos/yleinen!TULOSLASKELMA (TILINPÄÄTÖS)@
+#toiminnanalat -toiminnanalatE Toiminnanalojen erittely
+@tulos/yleinen:K!TOIMINNANALAT (TILINPÄÄTÖS)@
+#toiminnanalatE -toiminnanalat Toiminnanalojen erittely tileittäin
+@tulos/yleinen:KE!TOIMINNANALAT (TILINPÄÄTÖS)@
+<h2>Tilinpäätöksen laatimisperusteet</h2>
+#MIKRO
+<p>Tilinpäätöksen laatimisessa on noudatettu pien- ja mikroyrityksen tilinpäätöksessä esitettävistä tiedoista annetun asetuksen (PMA) mikroyrityssäännöstöä.</p>
+#PIEN
+<p>Tilinpäätöksen laatimisessa on noudatettu pien- ja mikroyrityksen tilinpäätöksessä esitettävistä tiedoista annetun asetuksen (PMA) pienyrityssäännöstöä.</p>
+#ISO
+<b>Yhdistyksestä on annettava täydet liitetiedot ja laadittava toimintakertomus</b>
+<p>Liitetiedot sisältävät ainakin
+<ol><li>tilinpäätöksen esittämistapaa koskevat tiedot</li>
+<li>tilinpäätöksen laatimisperusteet</li>
+<li>tuloslaskelmaa koskevat liitetiedot</li>
+<li>tasetta koskevat liitetiedot</li>
+<li>liitetiedot käypään arvoon merkitsemisestä</li>
+<li>tuloveroja koskevat tiedot</li>
+<li>vakuudet, vastuusitoumukset ja taseen ulkopuoliset järjestelyt</li>
+<li>tiedot tilintarkaastajien palkkioista</li>
+<li>lähipiiriliiketoimet</li>
+<li>tiedot henkilöstöstä ja toimielinten jäsenistä</li>
+<li>omistukset muissa yrityksissä</li>
+<li>konserniin kuuluvaa kirjanpitovelvollista koskevat tiedot</li></ol>
+<p>Lisäksi liitetietona on annettava tiedot sidotuista rahastoista</p>
+## Liitetiedot
+#laatimisperuste Tilinpäätöksessä käytetään valinnaisia laatimisperusteita
+<p>Vaihto-omaisuus (käyttöjärjestys poikkeaa hankkimisjärjestyksestä)</p>
+<p>Taseeseen aktivoidut aineettomat oikeudet (hankintamenoa ei poisteta 10 vuodessa)</p>
+<p>Kehitysmeno, liikearvo tai muu pitkävaikutteinen meno (ei kirjattu kuluksi tai poisteta 10 vuodessa)</p>
+<p>Pitkän valmistusajan vaativa suorite (jos tulo kirjataan valmistusasteen mukaisesti)</p>
+<p>Rahoitusväline ja sijoituskiinteistö (jos arvostetaan käypään arvoon)</p>
+<p>Valuuttakurssi (jos ei käytetty tilinpäätöspäivän kurssia)</p>
+<p>Pysyviin vastaaviin kuuluvat hyödykkeet (hankitamenoon luettu muutakin kuin hankinnasta ja valmistuksesta johtuvat muuttuvat menot)</p>
+<p>Koneiden ja kaluston sekä rakennusten suunnitelmapoistot (poikkeavat verotuksessa hyväksytyistä enimmäispoistoista)</p>
+<p>Taseeseen merkitys rahoitusleasing-hankinnat</p>
+#kvstand Laadinnassa käytetty kansainvälisiä tilinpäätösstandadeja
+<p>Laadinnassa on noudatettu .... (kansainväliset tilinpäätösstandardit)</p>
+#maksuperuste -PIEN -ISO Maksuperusteinen tilinpäätös
+<p>Tilinpäätös on laadittu maksuperusteisesti.<p>
+<p>Menettely vaikuttaa tilikauden tulokseen ja taloudelliseen asemaan siten, että ... / Menettelyllä ei ole olennaista merkitystä tilikauden tulokseen ja taloudelliseen asemaan.</p>
+<p>Taseeseen merkitsemättömiä ostovelkoja on XX € ja myyntisaamisia XX €.</p>
+<p>Muutokset vaihto-omaisuudessa:</p>
+<p>Muutokset pysyvissä vastaavissa:</p>
+<p>Vieraan pääoman korkojen suoriteperusteinen määrä:</p>
+<p>Lomapalkkavelan suoriteperusteinen määrä:</p>
+#poik -ISO Poikkeukselliset erät
+<h2>Poikkeukselliset erät</h2>
+<p>Tähän tieto poikkeuksellisista tuottojen ja kulujen määrästä, jos erät ovat olennaisia.</p>
+#jalkeen Olennaiset tapahtumat tilikauden jälkeen
+<h2>Olennaiset tapahtumat tilikauden jälkeen </h2>
+<p> Tähän tieto olennaisista tapahtumista ja niiden taloudellisesta merkityksestä </p>
+#sidotut Sidotut rahastot
+<h2>Sidotut rahastot</h2>
+<p>Sidotut rahastot, pääoman katteena olevien varojen käyttö, rahaston tuotot, kulut, varat ja velat; rahaston pääoma ja sen muutokset.</p>
+#kaypa -MIKRO Käypään arvoon merkitseminen
+<h2>Käypään arvoon merkitseminen</h2>
+<ol>
+<li>Arvonmääritysmallien ja -menettelyjen keskeiset olettamukset</li>
+<li>Kustakin rahoitusväline- ja muusta omaisuuslajista yhteenlaskettu käypä arvo</li>
+<li>Arvonmuutoksesta tuloslaskelmaan ja käyvän arvon rahastoon merkitty määrä</li>
+<li>Kustakin johdannainnaissopimuslajista tieto niiden käytön laajuudesta</li>
+<li>Jokaisen lajin luonne sekä olennaiset ehdot, jotka voivat vaikuttaa rahavirtojen määrään, ajoitukseen ja varmuuteen</li>
+<li>Käyvän rahan muutokset tilikauden aikana</li>
+</ol>
+#johdannaiset Rahoitusjohdannaiset
+<h2>Rahoitusjohdannaiset</h2>
+<p>Jokaisen johdannaislajin osalta johdannaisten käypä arvo, sekä tiedot käytön laajuudesta  ja luonteesta</p>
+#pitkalaina Yli viiden vuoden kuluttua erääntyvät lainat
+<h2>Pitkäaikaiset lainat</h2>
+<p>Yhteenlaskettu määrä pitkäaikaiseen vieraaseen pääomaan kuuluvista veloista, jotka erääntyvät yli viiden vuoden kuluttua</p>
+#vastuut Esineoikeudelliset vakuudet
+<h2>Annetut esineoikeudelliset vakuudet</h2>
+<p>Esineoikeudelliset vakuudet, eriteltyinä käteispanttien, ajoneuvokiinnitysten, yrityskiinnitysten, kiinteistökiinnitysten ja muun
+mahdollisen esinevakuuslakin mukaisiin määriin</p>
+#sitoumukset Taseen ulkopuoliset sitoumukset
+<h2>Taseen ulkopuoliset sitoumukset</h2>
+<p>Taseen ulkopuolisten sitoumusten yhteismäärä on XXX euroa.</p>
+<p>Edellä esitettyyn yhteismäärään sisältyy ...... Lisäksi .... </p>
+#elake Eläkevastuu, jota ei siirretty vakuutuslaitoksen kannettavaksi
+<h2>Eläkevastuut</h2>
+<p>Eläkevastuu, jota ei ole siirretty eläkelaitoksen hoidettavaksi</p>
+#emoyritys Tiedot emoyrityksestä
+<h2>Tiedot emoyrityksestä</h2>
+<p>Emoyrityksen nimi ja kotipaikka sekä tiedot siitä konsernitilinpäätöksen laativasta kosernista, johon yritys välittömimmin kuuluu</p>
+#lahilainat Lainat ja sitoumukset hallintoelimiin kuuluvien puolesta
+<h2>Lainat hallintoelimiin kuuluville sekä heidän puolestaan annetut sitoumukset</h2>
+<p>Toiminnanjohtajasta, hallituksen jäsenistä ja varajäsenistä, sekä vastaaviin toimielimiin kuuluvista, toimielinkohtaisena liitetietona</p>
+<ol>
+<li>rahalainojen yhteenlaskettu määrä, määrän vähennys ja lisäys, pääasialliset korko- ja muut ehdot</li>
+<li>vakuuksien ja vastuusitoumusten yhteenlaskettu määrä ja pääasiallinen sisältö</li>
+<li>eläkesitoumukset näistä tehtävistä</li>
+</ol>
+#intressi -MIKRO Liiketoimet intressitahojen kanssa
+<h2>Liiketoimet intressitahojen kanssa</h2>
+<p>Oikeushenkilöt, jotka yrityksen kanssa määräysvalta- tai osakkuussuhteessa; sekä toimitusjohtaja, hallituksen jäsen ja varajäsen sekä vastaavien toimielinten jäsenet</p>
+<ol>
+<li>kuvaus liiketoimesta</li>
+<li>liiketoimen arvo</li>
+<li>intressisuhteen luonne</li>
+<li>muut taloudellisen aseman arvioimisen kannalta välttämättömät tiedot liiketoimesta</li>
+</ol>
+#HENKILOSTO
+<h2>Henkilöstön määrä</h2>
+@henkilosto@
+#muut -MIKRO Olennaiset ja riitävän kuvan kannalta tarpeellinen toimintakertomustieto
+<h2>Muut tiedot</h2>
+<p>Tiedot, jotka ovat tarpeen oikean ja riittävän kuvan antamiseksi. </p>
+##Kirjanpito
+#sahko Sähköinen kirjanpito ja arkistointi
+<h2>Kirjanpitoaineisto</h2>
+<p>Kirjanpito on järjestetty Kitsas-ohjelmistolla. Tilinpäätös, tase-erittelyt, tilikartta, pää- ja päiväkirjat sekä pdf-muodossa olevat tositteet on arkistoitu html-muotoiseksi sähköiseksi arkistoksi.
+</p>
+#-sahko
+<h2>Kirjanpitoaineisto</h2>
+<p>Selvitys kirjanpitoaineistosta ja sen säilyttämisestä</p>
+#
+<h2>Allekirjoitukset</h2>
+<p> __________________ssa XX.XX.20XX</p>
+<p>
+<table width=100%><tr><td>N.N.</td><td>N.N.</td><td>N.N.</td></tr>
+<tr><td>N.N.</td><td>N.N.</td><td>N.N.</td></tr></table>
+<p>
+<p>
+<p>
+##Tilintarkastus
+#tilintarkastus -toiminnantarkastus Tilintarkastusmerkintä
+<h2>Tilintarkastusmerkintä</h2>
+<p>Suoritetusta tilintarkastuksesta on tänään annettu kertomus</p>
+<p>____________________  ___. päivänä _________kuuta  _________ </p>
+<p>
+<p>
+#toiminnantarkastus -tilintarkastus Toiminnantarkastusmerkintä
+<h2>Toiminnantarkastusmerkintä</h2>
+<p>Suoritetusta toiminnantarkastuksesta on tänään annettu kertomus</p>
+<p>____________________  ___. päivänä _________kuuta  _________ </p>
+<p>
+<p>
+[sv]
+##Rapporter
+#pmaTaseE -I Balansräkning uppdelad efter konto
+@tase/yleinen:E!BALANSRÄKNING (BOKSLUT)@
+#-pmaTaseE -ISO
+@tase/PMA!BALANSRÄKNING (BOKSLUT)@
+#isoTaseE -P -M Balansräkning uppdelad efter konto
+@tase/yleinen:E!BALANSRÄKNING (BOKSLUT)@
+#-isoTaseE -PIEN -MIKRO
+@tase/yleinen!BALANSRÄKNING (BOKSLUT)@
+#eriteltyTulos Resultaträkning updelad efter konto
+@tulos/yleinen:E!RESULTATRÄKNING (BOKSLUT)@
+#-eriteltyTulos
+@tulos/yleinen!RESULTATRÄKNING (BOKSLUT)@
+#toiminnanalat -toiminnanalatE Specifikation av verksamhetsområden
+@tulos/yleinen:K!VERKSAMHETSOMRÅDEN (BOKSLUT)@
+#toiminnanalatE -toiminnanalat Specifikation av verksamhetsområden per konto
+@tulos/yleinen:KE!VERKSAMHETSOMRÅDEN (BOKSLUT)@
+#MIKRO
+<p> Vid uppgörandet av detta bokslut har statsrådets förordning om uppgifter som ska tas upp i små- och mikroföretags bokslut följts.</p>
+#PIEN
+<p> Vid uppgörandet av detta bokslut har statrådets förordning om uppgifter som ska tas upp i små- och mikroföretags bokslut följts.</p>
+#ISO
+<b>För företaget måste fullständiga noter och verksamhetsberättelse uppgöras</b>
+<p>Noterna skall innehålla åtminstone
+<ol><li>noter om presentation av bokslut</li>
+<li>principerna för uppgörandet av bokslutet</li>
+<li>noter till resultaträkningen</li>
+<li>noter till balansräkningen</li>
+<li>noter om värdering till verkligt värde</li>
+<li>uppgifter om inkomstskatter</li>
+<li> Säkerheter, ansvarsförbindelser och arrangemang som inte har tagits med i balansräkningen</li>
+<li>uppgifter om revisorernas arvoden</li>
+<li>transaktioner med närstående parter</li>
+<li>uppgifter om personal och organens medlemmar</li>
+<li>innehav i andra företag</li>
+<li>noter angående en bokföringsskyldig som hör till en koncern </li></ol>
+<p>Därtill skall i noterna ges information om bundna fonder</p>
+##Noter
+#laatimisperuste I bokslutet används alternativa grunder för upprättandet
+<p> Omsättningstillgångar (skiljer sig från FIFO-metoden)</p>
+<p> I balansräkningen aktiverade immateriella rättigheter (anskaffningsutgiften skrivs inte av på 10 år)</p>
+<p> Utvecklingsutgift, affärsvärde och övrig utgift med lång verkningstid (inte kostnadsförd eller avskriven på 10 år)</p>
+<p> Inkomsten av en prestation som kräver lång framställningstid (om inkomsten bokförs enligt färdighetsgrad)</p>
+<p>Finansiella instrument och placeringsfastighet (om värderad till verkligt värde)</p>
+<p> Valutakurs (om man inte använt bokslutsdagens valutakurs)</p>
+<p> Till bestående aktiva tillhörande nyttigheter (till anskaffningsutgiften har räknats annat än rörliga kostnader som härrör från anskaffning och tillverkning)</p>
+<p> Avskrivningar enligt plan på maskiner och inventarier (avviker från maximala tillåtna avskrivningar i beskattningen)</p>
+<p> I balansräkningen upptagna anskaffningar genom finansieringsleasing </p>
+#kvstand Vid uppgörandet har internationella bokslutsstandarder använts
+<p> Vid uppgörandet har internationella bokslutsstandarder använts)</p>
+#poik -ISO Exceptionella poster
+<h2> Exceptionella poster </h2>
+<p> Här information om exceptionella inkomster och utgifter om posterna är väsentliga.</p>
+#jalkeen Uppgifter om väsentliga händelser som inträffat efter räkenskapsperioden
+<h2> Uppgifter om väsentliga händelser som inträffat efter räkenskapsperioden </h2>
+<p> Här uppgifter om väsentliga händelser och deras ekonomiska betydelse </p>
+#kaypa -MIKRO Verkligt värde i noterna
+<h2>Verkligt värde i noterna</h2>
+<ol>
+<li> de viktigaste bakomliggande antagandena för värderingsmodellerna och -metoderna</li>
+<li> det sammanlagda verkliga värdet för varje kategori av finansiella instrument eller andra tillgångar</li>
+<li> de förändringar av värdet på kategorier som redovisas i resultaträkningen och i fonden för verkligt värde </li>
+<li> för varje kategori av derivatinstrument, upplysningar om i vilken omfattning de används</li>
+<li>för varje typ av kategori karaktären samt viktiga villkor som kan påverka belopp, tidpunkt och säkerhet vad gäller framtida kassaflöden </li>
+<li>förändringar i fonden för verkligt värde under räkenskapsperioden </li>
+</ol>
+#johdannaiset Derivativinstrument
+<h2>Derivativinstrument</h2>
+<p>För varje kategori av derivatinstrument, derivatets verkliga värde samt uppgifter om omfattningen och arten av deras användning. </p>
+#pitkalaina Långfristiga lån som förfaller senare än om fem år
+<h2>Långfristiga lån över fem år</h2>
+<p> Det sammanlagda beloppet av till långfristigt främmande kapital hörande skulder som förfaller senare än efter fem år. </p>
+#vastuut Sakrättsliga säkerheter
+<h2> Sakrättsliga säkerheter som ett företag har ställt</h2>
+<p>Sakrättsliga säkerheter som ett målföretag har ställt av sina tillgångar specificerade som handfången pant, fordonsinteckningar, företagsinteckningar, fastighetsinteckningar och eventuella andra slag av realsäkerhet</p>
+#sitoumukset Ekonomiska åtaganden utanför balansräkningen
+<h2> Ekonomiska åtaganden utanför balansräkningen</h2>
+<p> De ekonomiska åtagandena utanför balansräkningen totalt är XXX euro.</p>
+<p> I detta totala belopp ingår....... Därtill.......</p>
+#elake Pensionsansvar som inte överförts till pensionsförsäkringsbolag
+<h2>Pensionsansvar</h2>
+<p> Pensionsansvar som inte överförts till pensionsförsäkringsbolag</p>
+#emoyritys Information om moderbolaget
+<h2>Information om moderbolaget</h2>
+<p> Moderbolagets namn och hemort samt information om den koncern som upprättar koncernbokslutet</p>
+#lahilainat Lån till verkställande direktören och personer inom administrationen samt åtaganden till förmån för dem
+<h2> Lån till verkställande direktören och personer inom administrationen samt åtaganden till förmån för dem</h2>
+<p> I fråga om verkställande direktören, medlemmarna och suppleanterna i styrelsen samt i fråga om personer tillhörande motsvarande förvaltningsorgan ska per förvaltningsorgan i noterna anges</p>
+<ol>
+<li> det sammanlagda beloppet av penninglån som beviljats dem, minskningen och ökningen av beloppet under räkenskapsperioden samt de huvudsakliga räntevillkoren och övriga villkor för lånen</li>
+<li> det sammanlagda beloppet av säkerheter och ansvarsförbindelser som gäller dem och det huvudsakliga innehållet</li>
+<li> pensionsförbindelserna för dessa uppdrag</li>
+</ol>
+#intressi -MIKRO Transaktioner med intressenter
+<h2> Transaktioner med intressenter</h2>
+<p>Juridiska personer som har bestämmande inflytande eller är i partsrelation till företaget, samt Verkställande direktör, medlem eller suppleant av styrelsen samt medlemmar av motsvarande organ</p>
+<ol>
+<li>en beskrivning av transaktionen</li>
+<li>värdet av transaktionen</li>
+<li>uppgift om typen av intresseförhållandet</li>
+<li> annan information avseende transaktionerna som är nödvändig för att bedöma småföretagets ekonomiska ställning </li>
+</ol>
+#HENKILOSTO
+<h2>Personalens storlek</h2>
+@henkilosto@Genomsnittlig personalstorlek
+#muut -MIKRO Information som behövs för att ge en riktig och tillräcklig bild
+<h2>Övrig information</h2>
+<p>Information som behövs för att ge en riktig och tillräcklig bild </p>
+##Bokföring
+#sahko Elektronisk bokföring och arkivering
+<h2>Bokföringsmaterialet</h2>
+<p> Bokföringen är uppgjord med Kitsas-programvaran. Bokslutet, balansspecifikationer, kontoplanen, huvud- och dagböcker samt verifikat i pdf-form är arkiverade i ett elektroniskt arkiv i html-format</p>
+#-sahko
+<h2>Bokföringsmaterialet</h2>
+<p>Redogörelse över bokföringsmaterialet och hur det sparas</p>
+#
+<h2>Underskrifter</h2>
+<p> __________________XX.XX.20XX</p>
+<p>
+<table width=100%><tr><td>N.N.</td><td>N.N.</td><td>N.N.</td></tr>
+<tr><td>N.N.</td><td>N.N.</td><td>N.N.</td></tr></table>
+<p>
+<p>
+<p>
+##Revision
+#tilintarkastus Revisionsanteckning
+<h2>Revisionsanteckning</h2>
+<p> Över utförd revision har idag avgetts berättelse</p>
+<p>____________________ ___.  _________ 20XX </p>
+<p>
+<p>
+#toiminnantarkastus -tilintarkastus Förvaltningsrevisionsanteckning
+<h2>Förvaltningsrevisionsanteckning</h2>
+<p>Över utförd förvaltningsrevision har idag avgetts berättelse</p>
+<p>____________________  ___.  _________  20XX </p>
+<p>
+<p>
+
+
+[zh]
+## 报表
+#pmaTaseE -I 按科目明细列示的资产负债表
+@tase/yleinen:E!TASE (TILINPÄÄTÖS)@
+#-pmaTaseE -ISO
+@tase/PMA!TASE (TILINPÄÄTÖS)@
+#isoTaseE -P -M 按科目明细列示的资产负债表
+@tase/yleinen:E!TASE (TILINPÄÄTÖS)@
+#-isoTaseE -PIEN -MIKRO
+@tase/yleinen!TASE (TILINPÄÄTÖS)@
+#eriteltyTulos 按科目明细列示的利润表
+@tulos/yleinen:E!TULOSLASKELMA (TILINPÄÄTÖS)@
+#-eriteltyTulos
+@tulos/yleinen!TULOSLASKELMA (TILINPÄÄTÖS)@
+#toiminnanalat -toiminnanalatE 业务领域明细
+@tulos/yleinen:K!TOIMINNANALAT (TILINPÄÄTÖS)@
+#toiminnanalatE -toiminnanalat 按科目列示的业务领域明细
+@tulos/yleinen:KE!TOIMINNANALAT (TILINPÄÄTÖS)@
+<h2>财务报表编制基础</h2>
+#MIKRO
+<p>本财务报表的编制遵循《小型与微型企业财务报表信息披露条例（PMA）》中的微型企业规定。</p>
+#PIEN
+<p>本财务报表的编制遵循《小型与微型企业财务报表信息披露条例（PMA）》中的小型企业规定。</p>
+#ISO
+<b>协会须提供完整的附注并编制经营报告</b>
+<p>附注至少包括以下内容</p>
+<ol>
+  <li>关于财务报表呈现方式的说明</li>
+  <li>财务报表的编制基础</li>
+  <li>利润表相关附注</li>
+  <li>资产负债表相关附注</li>
+  <li>按公允价值计量的相关附注</li>
+  <li>所得税相关信息</li>
+  <li>担保、或有负债及表外安排</li>
+  <li>审计人员报酬信息</li>
+  <li>关联方交易</li>
+  <li>员工与治理机构成员信息</li>
+  <li>在其他企业的持股</li>
+  <li>属于集团的会计义务主体的相关信息</li>
+</ol>
+<p>此外，还应作为附注提供受限制的各项基金信息</p>
+
+## 附注信息
+#laatimisperuste 财务报表中使用的可选编制基础
+<p>存货（发出顺序与取得顺序不一致）</p>
+<p>计入资产负债表的无形权利（取得成本未在10年内摊销）</p>
+<p>开发支出、商誉或其他长期性费用（未计入当期费用或未在10年内摊销）</p>
+<p>需较长生产周期的履约产出（若收入按完工百分比确认）</p>
+<p>金融工具与投资性房地产（若按公允价值计量）</p>
+<p>汇率（若未采用资产负债表日汇率）</p>
+<p>属于长期资产的项目（取得成本包含除取得与制造所致的变动成本以外的其他项目）</p>
+<p>机器设备与建筑物的计划折旧（与税法允许的最高折旧不同）</p>
+<p>计入资产负债表的融资租赁取得</p>
+
+#kvstand 编制中采用的国际会计准则
+<p>编制遵循……（国际财务报告准则等）</p>
+
+#maksuperuste -PIEN -ISO 收付实现制财务报表
+<p>财务报表按收付实现制编制。</p>
+<p>该处理方式对本期损益与财务状况的影响为：…… / 该处理方式对本期损益与财务状况无重大影响。</p>
+<p>未计入资产负债表的应付账款为 XX €，应收账款为 XX €。</p>
+<p>存货变动：</p>
+<p>长期资产变动：</p>
+<p>有息负债按权责发生制计算的利息金额：</p>
+<p>带薪休假工资债务按权责发生制计算的金额：</p>
+
+#poik -ISO 异常项目
+<h2>异常项目</h2>
+<p>如存在重大异常的收入与费用，请在此披露其金额。</p>
+
+#jalkeen 会计期后重大事项
+<h2>会计期后重大事项</h2>
+<p>在此披露期后重大事项及其经济影响。</p>
+
+#sidotut 受限制基金
+<h2>受限制基金</h2>
+<p>受限制基金、以资本为覆盖的资金使用、基金的收入、费用、资产与负债；基金资本及其变动。</p>
+
+#kaypa -MIKRO 公允价值计量
+<h2>公允价值计量</h2>
+<ol>
+  <li>估值模型与程序的关键假设</li>
+  <li>各类金融工具与其他资产项目的公允价值合计</li>
+  <li>计入利润表与公允价值储备的变动额</li>
+  <li>各类衍生合同的使用范围</li>
+  <li>各类项目的性质及影响现金流金额、时点与确定性的主要条款</li>
+  <li>会计期间的公允价值变动</li>
+</ol>
+
+#johdannaiset 金融衍生品
+<h2>金融衍生品</h2>
+<p>就每类衍生品披露其公允价值，以及使用范围与性质。</p>
+
+#pitkalaina 五年以上到期的借款
+<h2>长期借款</h2>
+<p>到期日在五年以上的长期外来资金负债的合计金额。</p>
+
+#vastuut 物权性担保
+<h2>提供的物权性担保</h2>
+<p>物权性担保，分别列示为现金质押、车辆抵押、企业抵押、不动产抵押以及其他依物权担保法规定的项目金额。</p>
+
+#sitoumukset 表外承诺
+<h2>表外承诺</h2>
+<p>表外承诺的合计金额为 XXX 欧元。</p>
+<p>上述合计包含……此外……</p>
+
+#elake 未移交保险机构承担的养老责任
+<h2>养老责任</h2>
+<p>未移交至养老保险机构承担的养老义务。</p>
+
+#emoyritys 母公司信息
+<h2>母公司信息</h2>
+<p>母公司的名称与注册地，以及企业直接隶属的合并财务报表集团信息。</p>
+
+#lahilainat 向治理机构成员提供的贷款及代表其承担的承诺
+<h2>向治理机构成员提供的贷款及代表其承担的承诺</h2>
+<p>就执行董事、董事会成员与候补成员及相应机构成员，按机构分别披露：</p>
+<ol>
+  <li>货币贷款合计、减少与增加、主要利率与其他条款</li>
+  <li>担保与或有负债的合计及主要内容</li>
+  <li>与上述职务相关的养老承诺</li>
+</ol>
+
+#intressi -MIKRO 与利益相关方的交易
+<h2>与利益相关方的交易</h2>
+<p>与本企业存在控制或参股关系的法人，以及总经理、董事会成员与候补成员及相应机构成员：</p>
+<ol>
+  <li>交易描述</li>
+  <li>交易金额</li>
+  <li>关系性质</li>
+  <li>评估财务状况所必需的其他信息</li>
+</ol>
+
+#HENKILOSTO
+<h2>员工数量</h2>
+@henkilosto@
+#muut -MIKRO 其他必要信息
+<h2>其他信息</h2>
+<p>为提供真实且充分的财务状况所必需的说明。</p>
+
+## 会计
+#sahko 电子会计与归档
+<h2>会计资料</h2>
+<p>本公司使用 Kitsas 软件进行会计核算。财务报表、资产负债表明细、科目表、总账与日记账，以及 PDF 形式的凭证均已归档为 HTML 形式的电子档案。
+</p>
+#-sahko
+<h2>会计资料</h2>
+<p>关于会计资料及其保存方式的说明</p>
+#
+<h2>签字</h2>
+<p> __________________ssa XX.XX.20XX</p>
+<p>
+<table width=100%><tr><td>N.N.</td><td>N.N.</td><td>N.N.</td></tr>
+<tr><td>N.N.</td><td>N.N.</td><td>N.N.</td></tr></table>
+<p>
+<p>
+<p>
+## 审计
+#tilintarkastus -toiminnantarkastus 审计标注
+<h2>审计标注</h2>
+<p>本日已就所执行的审计出具审计报告</p>
+<p>____________________  ___. 日 _________ 月  _________ 年 </p>
+<p>
+<p>
+#toiminnantarkastus -tilintarkastus 业务监督检查标注
+<h2>业务监督检查标注</h2>
+<p>本日已就所执行的业务监督检查出具报告</p>
+<p>____________________  ___. 日 _________ 月  _________ 年 </p>
+<p>
+<p>

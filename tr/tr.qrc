@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/tr">
+        <!-- Qt 官方翻译 -->
+        <file>qtbase_fi.qm</file>
+        <file>qtbase_sv.qm</file>
+        <file>qtbase_zh_CN.qm</file>
+
+        <!-- Kitsas 应用翻译 -->
+        <file>kitsas_en.qm</file>
+        <file>kitsas_sv.qm</file>
+        <file>kitsas_zh_CN.qm</file>
+    </qresource>
+</RCC>
