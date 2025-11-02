@@ -256,6 +256,7 @@
         <file>tililta.png</file>
         <file>usbdrive.png</file>
         <file>draft.svg</file>
+        <file>../font/simsun.ttc</file>
     </qresource>
     <qresource prefix="/">
         <file>liput/at.png</file>

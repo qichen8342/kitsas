@@ -147,6 +147,7 @@ int main(int argc, char *argv[])
     QFontDatabase::addApplicationFont(":/aloitus/FreeSans.ttf");
     QFontDatabase::addApplicationFont(":/aloitus/FreeMono.ttf");
     QFontDatabase::addApplicationFont(":/lasku/code128_XL.ttf");
+    QFontDatabase::addApplicationFont(":/pic/../font/simsun.ttc");
 
 #endif
 
@@ -155,6 +156,10 @@ int main(int argc, char *argv[])
     QString fonttinimi = kp()->settings()->value("Fontti").toString();
     if( !fonttinimi.isEmpty()) {
         a.setFont( QFont( fonttinimi, kp()->settings()->value("FonttiKoko").toInt()) );
+    }
+
+    if (Kielet::instanssi()->uiKieli() == "zh_CN") {
+        a.setFont(QFont("SimSun", 12));
     }
 
     if( parser.isSet("pro") ||  PRO_VERSIO ) {
