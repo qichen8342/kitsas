@@ -188,7 +188,7 @@ void DevTool::peliNapautus(int ruutu)
 
     if( !peliRuudut_.contains(0))
     {
-        ui->tulosLabel->setText(QObject::tr("Tasapeli"));
+        ui->tulosLabel->setText("Tasapeli");
         return;
     }
 
@@ -287,9 +287,9 @@ int DevTool::tarkastaVoitto()
     if( tulos )
     {
         if( tulos == 1 )
-            ui->tulosLabel->setText(QObject::tr("Saat veronpalautusta!"));
+            ui->tulosLabel->setText("Saat veronpalautusta!");
         else
-            ui->tulosLabel->setText(QObject::tr("Maksat lisäveroa!"));
+            ui->tulosLabel->setText("Maksat lisäveroa!");
         pelissa_ = false;
     }
     return tulos;

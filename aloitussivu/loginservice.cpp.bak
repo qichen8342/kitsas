@@ -109,7 +109,7 @@ void LoginService::emailTarkastettu()
         passwordEdit_->setPlaceholderText("Kirjoita nyt salasana");
         messageLabel_->hide();
     } else if( reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 404 ) {
-        messageLabel_->setText(QObject::tr("Käyttäjätunnusta ei löydy"));
+        messageLabel_->setText("Käyttäjätunnusta ei löydy");
         messageLabel_->setStyleSheet("color: orangered");
         messageLabel_->show();
     }

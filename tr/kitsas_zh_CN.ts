@@ -16185,5 +16185,44 @@ Varmenne ei vielä ole käytettävissä.</source>
         <source>Kirjausohje</source>
         <translation>记账说明</translation>
     </message>
+	
+	
+    <message>
+        <location filename="kitsas/kitupiikkiikkuna.cpp" line="558"/>
+        <source>Ohjeet 	F1</source>
+        <translation>帮助（F1）</translation>
+    </message>
+
+    <message>
+        <location filename="kitsas/aloitussivu/loginservice.cpp" line="112"/>
+        <source>Käyttäjätunnusta ei löydy</source>
+        <translation>未找到用户名</translation>
+    </message>
+
+    <message>
+        <location filename="kitsas/arkisto/tilikausimuokkausdlg.cpp" line="125"/>
+        <source>Tilikauden enimmäiskesto on 18 kuukautta</source>
+        <translation>会计期间的最长期限为 18 个月</translation>
+    </message>
+
+    <message>
+        <location filename="kitsas/tools/devtool.cpp" line="191"/>
+        <source>Tasapeli</source>
+        <translation>平局</translation>
+    </message>
+
+    <message>
+        <location filename="kitsas/tools/devtool.cpp" line="290"/>
+        <source>Saat veronpalautusta!</source>
+        <translation>您将获得退税！</translation>
+    </message>
+
+    <message>
+        <location filename="kitsas/tools/devtool.cpp" line="292"/>
+        <source>Maksat lisäveroa!</source>
+        <translation>您需要补缴税款！</translation>
+    </message>
+
+	
 </context>
 </TS>
