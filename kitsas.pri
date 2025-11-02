@@ -30,6 +30,7 @@ DISTFILES += \
     uusikp/update3.sql
 
 TRANSLATIONS = tr/kitsas_en.ts \
-               tr/kitsas_sv.ts
+               tr/kitsas_sv.ts \
+               tr/kitsas_zh_CN.ts
 
 RC_ICONS = kitsas.ico 

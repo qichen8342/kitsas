@@ -101,8 +101,12 @@ void Kielet::valitseUiKieli(const QString &kieli)
     QSettings settings;
     settings.setValue("uiKieli", kieli);
 
-    QLocale::setDefault(QLocale(kieli=="sv" ? QLocale::Swedish : QLocale::Finnish,
-                                QLocale::Finland));
+    if (kieli == "sv")
+        QLocale::setDefault(QLocale(QLocale::Swedish, QLocale::Finland));
+    else if (kieli == "zh_CN")
+        QLocale::setDefault(QLocale(QLocale::Chinese, QLocale::China));
+    else
+        QLocale::setDefault(QLocale(QLocale::Finnish, QLocale::Finland));
 }
 
 QString Kielet::kaanna(const QString &avain, const QString &kieli) const
